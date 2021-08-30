@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2.3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social</title>
+  <meta name="description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2.3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/lisa-coes/repro" />
+  <meta property="og:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
+  <meta property="og:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="github-repo" content="lisa-coes/repro" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2.3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  
+  <meta name="twitter:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="twitter:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
+
+<meta name="author" content="Investigador a cargo: Juan Carlos Castillo   Asistente de investigación: Julio Iturra   Pasante: Martín Venegas Márquez" />
+
+
+<meta name="date" content="2021-08-30" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
+<link rel="prev" href="qué-se-ha-hecho.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/lisa.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="./"><img src="images/favicon.jpg"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introducción</a></li>
+<li class="chapter" data-level="2" data-path="reproducibilidad.html"><a href="reproducibilidad.html"><i class="fa fa-check"></i><b>2</b> Reproducibilidad</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="qué-es-la-reproducibilidad.html"><a href="qué-es-la-reproducibilidad.html"><i class="fa fa-check"></i><b>2.1</b> ¿Qué es la reproducibilidad?</a></li>
+<li class="chapter" data-level="2.2" data-path="qué-se-ha-hecho.html"><a href="qué-se-ha-hecho.html"><i class="fa fa-check"></i><b>2.2</b> ¿Qué se ha hecho?</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="qué-se-ha-hecho.html"><a href="qué-se-ha-hecho.html#berkeley-initiative-for-transparency-in-the-social-sciences"><i class="fa fa-check"></i><b>2.2.1</b> Berkeley Initiative for Transparency in the Social Sciences</a></li>
+<li class="chapter" data-level="2.2.2" data-path="qué-se-ha-hecho.html"><a href="qué-se-ha-hecho.html#proyecto-tier-teaching-integrity-in-empirical-research"><i class="fa fa-check"></i><b>2.2.2</b> Proyecto TIER (Teaching Integrity in Empirical Research)</a></li>
+<li class="chapter" data-level="2.2.3" data-path="qué-se-ha-hecho.html"><a href="qué-se-ha-hecho.html#uk-reproducibility-network-ukrn"><i class="fa fa-check"></i><b>2.2.3</b> UK Reproducibility Network (UKRN)</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html"><i class="fa fa-check"></i><b>2.3</b> Herramientas para los análisis reproducibles</a>
+<ul>
+<li class="chapter" data-level="" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html#introducción"><i class="fa fa-check"></i>Introducción</a></li>
+<li class="chapter" data-level="2.3.1" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html#estructura-del-proyecto"><i class="fa fa-check"></i><b>2.3.1</b> Estructura del proyecto</a></li>
+<li class="chapter" data-level="2.3.2" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html#texto-plano-y-documentos-dinámicos"><i class="fa fa-check"></i><b>2.3.2</b> Texto plano y documentos dinámicos</a></li>
+<li class="chapter" data-level="2.3.3" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html#control-de-versiones"><i class="fa fa-check"></i><b>2.3.3</b> Control de versiones</a></li>
+<li class="chapter" data-level="2.3.4" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html#prácticas-de-código"><i class="fa fa-check"></i><b>2.3.4</b> Prácticas de código</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/lisa-coes" target="blank">LISA-COES <i class="fa fa-github"></i></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducibilidad en Investigación Social</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <script src="assets/hideOutput.js"></script>
+  <link href="assets/lisa.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="images/lisa-complete.png">
+</div>
+<div id="herramientas-para-los-análisis-reproducibles" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Herramientas para los análisis reproducibles</h2>
+<div id="introducción" class="section level3 unnumbered">
+<h3>Introducción</h3>
+<p>Generalmente, cuando se habla de reproducibilidad se toma en consideración su dimensión computacional, esto es, el trabajo con código. Como investigadores de las ciencias sociales empíricas y promotores de la ciencia abierta creemos que efectivamente este es el núcleo de la reproducibilidad, sin embargo no es su única acepción. La mera existencia de un código de análisis no nos garantiza que un proyecto sea reproducible <em>per se</em>, dado que es importante tener en consideración <em>cómo</em> es que distintos elementos del proyecto se relacionan entre sí para <em>regenerar</em> los resultados de un trabajo publicado. Considerando esto, es que dividiremos esta sección presentando un <em>flujo de trabajo reproducible</em> considerando cuatro características:</p>
+<ol style="list-style-type: decimal">
+<li>Estructura del proyecto</li>
+<li>Documentos dinámicos</li>
+<li>Control de versiones</li>
+<li>Prácticas de código</li>
+</ol>
+<p>Veamos cada uno de ellos.</p>
+</div>
+<div id="estructura-del-proyecto" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Estructura del proyecto</h3>
+<p>Una de las principales cosas que debemos considerar al elaborar un proyecto es su estructura de carpetas y archivos, esta nos permita entender e identificar los archivos existentes y rol en el flujo de trabajo. En este sentido, una de las herramientas que han sido desarrolladas son los denominados <strong>Protocolos</strong> (p. ej. TIER, DRESS, IPO), los cuales brindan una serie de orientaciones referentes a estructura digital de carpetas, documentación de archivos y rutinas para conseguir el anhelado objetivo de los <strong>análisis reproducibles</strong>. Para esto, es posible mencionar una serie de orientaciones generales referentes a dichos procedimientos, por ejemplo en el Proyecto TIER <strong>[CITAR]</strong> se han desarrollado protocolos orientados a la reproducibilidad de los análisis, los cuales se fundamentan en tres principios que se describen a continuación.</p>
+<ol style="list-style-type: lower-roman">
+<li><p><em>Reproducibilidad</em>: La documentación debe permitir regenerar completamente los resultados del estudio original. En primer lugar, se debe comenzar con los datos originales brutos idénticos a aquellos con los que el autor comenzó la investigación, Luego, la posibilidad de realizar las mismas rutinas de código para preparar los datos finales para el análisis. Finalmente, se debe disponer de las rutinas de código que permitan regenerar los mismos resultados publicados, por ejemplo, las tablas o figuras presentes en la investigación.</p></li>
+<li><p><em>Independencia</em>: Toda la información necesaria para regenerar los resultados del estudio debe estar presente en la documentación. Esto refiere a que no debe ser necesario solicitar ninguna información adicional al autor original.</p></li>
+<li><p><em>Realismo</em>: La documentación debe estar organizada y presentada con suficiente claridad para que bajo un criterio realista, sea factible que un investigador independiente con un nivel de expertise razonable tenga la posibilidad de regenerar completa e independientemente los resultados del estudio sin mayores dificultades.</p></li>
+</ol>
+<p>Teniendo en cuenta lo anterior, la forma en que se encuentran <strong>organizadas</strong> las partes de un proyecto es fundamental para cumplir a cabalidad con lo que se propone cada principio. Como vimos en la sección previa, es posible entender la reproducibilidad como un <em>espectro</em> que involucra una triada de tres elementos: Datos, Métodos y Resultados.</p>
+<p><a href="">ESQUEMA: Datos - Métodos - Resultados</a></p>
+<p>Este esquema es una síntesis que hacemos de algunos de los protocolos más usados en las ciencias sociales. Más que proponer un protocolo nuevo, buscamos describir los elementos fundamentales que contiene una estructura de proyecto reproducible y que están presentes de alguna u otra forma en la mayoría de los protocolos.</p>
+<div id="carpeta-raíz" class="section level4" number="2.3.1.1">
+<h4><span class="header-section-number">2.3.1.1</span> Carpeta raíz</h4>
+<p>Antes de detallar los tres elementos que se deben considerar para avanzar en el espectro de reproducibilidad, es importante partir de una base. Esta es la que en distintos protocolos y otras herramientas para la reproducibilidad se conoce como la carpeta raíz <em>(root)</em>. La carpeta raíz es donde se alberga toda la documentación de referencia general para el proyecto, lo que abarca desde bases de datos, hasta el cuestionario u otros documentos similares. La carpeta raíz es el punto de partida para poder emplear otras prácticas para la reproducibilidad.</p>
+<p>A modo de ir avanzando en el espectro de reproducibilidad, es importante tener en consideración dos principios en relación a la carpeta raíz: <strong>documentar</strong> y <strong>orientar</strong>. La documentación implica exponer ordenadamente el contenido del proyecto completo de manera jerárquica, es decir, el contenido de subcarpetas y su funciones. En cambio, orientar implica conducir una correcta ejecución de las rutinas que permitan regenerar los resultados de la investigación. Una carpeta base que logre considerar estos principios debe tener los siguientes contenidos:</p>
+<ol style="list-style-type: decimal">
+<li>Detalle de la base y las subcarpetas organizadas según su contenido. Una manera amigable de representar esta estructura es a través de un “árbol de directorios”, el cual ilustra la jerarquía de las carpetas y los principales archivos contenidos</li>
+</ol>
+<blockquote>
+<p>Tip: Cómo generar un directory tree automatizado en <a href="t.ly/c58k">Windows</a>,<a href="t.ly/WlMC">linux</a> y <a href="t.ly/ZCXK">MacOS</a></p>
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Instrucciones para la configuración (<em>setup</em>) del paquete estadístico necesario para ejecutar las rutinas de código. Esto considera el número de versión del software, los complementos necesarios que sean adicionales al paquete estándar y cualquier otra información especial sobre el software que el lector necesite conocer para reproducir los resultados del estudio.</p></li>
+<li><p>Instrucciones de “inicio-a-fin” para regenerar los resultados a través de referencias directas al uso de los archivos de procesamiento de datos en la preparación y análisis. En este apartado se incluye el detalle de los objetivos de cada rutina de código de manera independiente.</p></li>
+</ol>
+<p>Los contenidos descritos se deben incluir en un archivo que lleve de nombre “readme.md/txt/pdf”. Una sugerencia de estructura interna de este documento es la siguiente:</p>
+<ol style="list-style-type: decimal">
+<li>Estructura y contenido del proyecto reproducible
+<ul>
+<li>Esquema tipo “Árbol de directorios”</li>
+<li>Descripción de cada subcarpeta, sus archivo y roles</li>
+</ul></li>
+<li>Instrucciones y rutinas de ejecución de resultados
+<ul>
+<li>Instrucciones para configuración del software</li>
+<li>Instrucciones para la ejecución de rutinas de código de “inicio-a-fin”.</li>
+</ul></li>
+</ol>
+<p>Con este archivo “readme.md/txt/pdf” ya contamos con el primer gran paso hacia la reproducibilidad: nuestra carpeta raíz está bien documentada y logra orientar bien cualquier tercero que quiera reproducir nuestra investigación. Con esto descrito, pasaremos a detallar los tres elementos a considerar para adoptar un enfoque reproducible en un proyecto (Datos-Método-Resultados)</p>
+</div>
+<div id="datos" class="section level4" number="2.3.1.2">
+<h4><span class="header-section-number">2.3.1.2</span> Datos</h4>
+<p>En la ciencia trabajamos con datos, ya sean cualitativos o cuantitativos, primarios o secundarios, si nos desempeñamos como científicos estaremos analizando datos con tal de sacar conclusiones relevantes para el avance del conocimiento. Es por esto que, el cómo albergamos y documentamos los datos para nuestro estudio es uno de los primeros puntos a considerar para adoptar un enfoque orientado hacia la reproducibilidad. El objetivo es que cualquier persona sea capaz de comprender nuestros datos y utilizarlos para reproducir nuestros análisis.</p>
+<p>Si bien los protocolos varían de acuerdo a cómo se organizan los datos dentro de la carpeta raíz (i.e. en qué carpeta se alojan), algo que suele ser común entre los protocolos y que relevante de recalcar acá es la diferenciación entre los datos originales o “crudos” (<em>raw data</em>) y los datos procesados. Los datos originales son aquellos que no han sufrido ningún tipo de modificación, en contraste a los datos procesados. El albergar ambas bases de datos permite comprender de mejor forma las modificaciones que se hicieron y las decisiones que se tomaron.</p>
+<p>Al igual que con la carpeta raíz, sugerimos ciertas prácticas de documentación y orientación para que el proyecto sea reproducible. Presentamos el detalle para los datos originales y los datos procesados.</p>
+<p>Para toda fuente de <strong>datos original</strong>, se debe proveer la siguiente información:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Citación bibliográfica en un formato estándar (p. ej. American Psychological Association, Chicago, etc). Sugerimos revisar el componente de <a href="https://lisa-coes.netlify.app/02componentes/">“Datos Abiertos”</a> para la publicación de datos.</p></li>
+<li><p>La fecha de creación de la base de datos o el día en que se accedió por primera vez por parte del autor (en caso de que sean datos secundarios.</p></li>
+<li><p>Una descripción respecto a cómo se puede acceder a una copia de esta base de datos. Se debe ser lo suficientemente claro como para que un usuario independiente pueda acceder a los datos sin requerir información adicional.</p></li>
+<li><p>Un libro de códigos de todas las variables de la base de datos. Sugerimos revisar el apartado <a href="https://lisa-coes.netlify.app/como-hacer-codebook/">“¿Cómo hacer un libro de códigos?”</a>.</p></li>
+</ol>
+<p>Para toda fuente de <strong>datos procesada</strong>, es posible identificar dos tipos:</p>
+<ul>
+<li><p>Base de datos intermedia, la cual contiene información que, por un lado, puede ser complementaria con una base de datos principal. Por ejemplo, tenemos una base de datos con información de individuos pertenecientes a zonas/territorios (regiones o países), a la cual necesitamos incorporar información adicional que proviene de fuentes externas. En este caso, podemos generar una base procesada intermedia, para luego proceder a combinar ambas fuentes de datos.</p></li>
+<li><p>Base de datos final, es una versión final de una base de datos que contiene las variables completamente procesadas para realizar los análisis.</p></li>
+</ul>
+<p>En estos casos se sugiere proveer la siguiente información:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Libro de códigos de la base procesada. Para ello, las variables deben estar correctamente etiquetadas.</li>
+<li>Fecha de creación y versión de la base de datos procesada.</li>
+</ol>
+</div>
+<div id="métodos" class="section level4" number="2.3.1.3">
+<h4><span class="header-section-number">2.3.1.3</span> Métodos</h4>
+<p>Con los métodos nos referimos a toda información del proyecto relacionada al trabajo con los datos, específicamente al procesamiento y el análisis de datos. Ambas actividades pueden ser albergadas en un mismo archivo, no obstante e independiente del protocolo que se use, sugerimos separar ambas actividades en documentos distintos. Esto hará mucho más fácil la lectura del proceso de toma de decisiones, especialmente si son archivos de código. De esta manera, cualquier tercero podrá entender el proceso, evitando a lo más posible que emerjan preguntas tipo <em>¿y de dónde salió esta variable?</em>. En esta sección presentamos un flujo tanto para el documento de procesamiento como para el de análisis. Independiente del software estadístico que usted esté utilizando, será capaz de adherir a este flujo para hacer estas actividades de forma más ordenada.</p>
+<p>El <strong>procesamiento de los datos</strong> cumple una función muy importante para el desarrollo de un artículo: la de procesar los datos que darán paso a los análisis del estudio. Considerando eso, el objetivo final de este documento es generar una <strong>base de datos procesada</strong>, que contenga solamente los datos importantes para analizar. El flujo puede ser:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Cargar la base de datos original:</strong> Cargar la base de datos original es el punto de partida para el procesamiento de los datos, y cómo tal, es muy importante que esta acción sea reproducible. En softwares como R, podemos hacer esta acción de manera reproducible al cargar los datos directamente de la web. Si esta no es una opción, podemos dejar bien documentado la forma en que se debe cargar la base de datos.</p></li>
+<li><p><strong>Revisar la base de datos:</strong> Una vez cargada la base de datos original, recomendamos siempre revisar para que todo esté en orden. Cuando decimos “ver que todo esté en orden” nos referimos a diagnosticar si la base ha sido correctamente cargada. Por ejemplo, a veces podría suceder que la base de datos está en formato .csv con las columnas separadas por punto y coma (“;”) y nosotros la cargamos en el formato tradicional (“,”).</p></li>
+<li><p><strong>Seleccionar las variables que se utilizarán:</strong> Generalmente no ocupamos todas las variables dentro de una base de datos, en especial en la investigación basada en encuestas con datos secundarios. Es por eso que el comienzo del procesamiento de datos consta de seleccionar las variables que utilizaremos para los análisis.</p></li>
+<li><p><strong>Renombrar las variables:</strong> Si bien no es estrictamente necesario renombrar las variables, sí se recomienda para facilitar tanto el propio trabajo cómo el de alguien que vaya a emplear el mismo código. Generalmente, en la investigación de encuestas con datos secundarios nos encontramos con grandes bases de datos, con nombres técnicos y poco autoexplicativos. La principal recomendación aquí es cambiar estos nombres por nombres <strong>cortos</strong> y <strong>autoexplicativos</strong>.</p></li>
+</ol>
+<p><strong>Procedimientos a realizar por cada variable:</strong></p>
+<p>Una vez hemos cumplido con los aspectos generales del procesamiento, podemos pasar a la revisión de variable a variable. Aquí proponemos el siguiente flujo:</p>
+<ul>
+<li><p><strong>Descriptivo inicial:</strong> calcular una tabla de frecuencias o de medidas de tendencia central y dispersión para conocer el estado de la variable previo a cualquier modificación.</p></li>
+<li><p><strong>Recodificación:</strong> aquí se toman las decisiones respecto a la recodificación de los datos perdidos y otro tipo de valores a modificar (e.g. errores de tipeo). Es importante que las decisiones sobre la recodificación queden bien estipuladas y transparentadas. Por ejemplo, en caso de hacer imputación en alguna variable, dejarlo comentado en el código.</p></li>
+<li><p><strong>Etiquetado:</strong> el etiquetado es una forma simple y eficiente de poder dar más información acerca de una variable. En el caso de bases de datos sobre encuestas, generalmente una base bien documentada trae etiquetas predeterminadas que hacen alusión a las preguntas del cuestionario. Es importante tener en consideración que no todos los softwares soportan el etiquetado en las bases de datos, en esos casos es útil elaborar un libro de códigos para nuestra base de datos procesada.</p></li>
+<li><p><strong>Descriptivo final:</strong> recomendamos que, posterior a haber hecho las recodificaciones correspondientes, revisar de nuevo las frecuencias o las medidas de tendencia central de las variables, para diagnosticar que no hemos cometido errores en el procesamiento. Por dar un ejemplo, un error común, es etiquetar mal las categorías de la variable, lo tendría un impacto directo en la interpretación de los datos.</p></li>
+<li><p><strong>Otros ajustes:</strong> en esta última parte del flujo por variable, recomendamos efectuar toda modificación específica y relevante para la forma que analizaremos los datos. Por ejemplo, si fuésemos a construir un índice con algunas de las variables.</p></li>
+</ul>
+<p>El seguir este flujo de manera sistemática facilitará la lectura tanto para terceros, como para nosotros mismos en el futuro.</p>
+<p>Una vez contamos con nuestra base de datos procesada, es hora de la acción. En el documento de <strong>análisis de datos</strong> se procede a elaborar todas las tablas, gráficos, pruebas estadísticas etc. que vayan a ser introducidos en el artículo final. Es importante que se piense en este documento cómo un reporte de análisis en sí mismo, es decir, debe estar dirigido al público y no solo ser un documento de trabajo interno para el equipo de investigación.</p>
+<p>Al igual que para la sección de procesamiento de datos, aquí también recomendamos un flujo de trabajo para hacer el trabajo -y el código- reproducible y eficiente. Dividimos el flujo en dos secciones, primero, una que contenga los análisis necesarios para probar las hipótesis de investigación. Segundo, una sección con análisis secundarios y/o exploratorios que sean relevantes para lo que el artículo busca plantear. Veremos esto con un poco más de detalle.</p>
+<p>Para una correcta comprensión de la subcarpeta de procesamiento, sus archivos y roles, es importante tener una descripción adecuada de cada una de sus partes.</p>
+<p>Al estar mayormente orientado a la programación de rutinas de código, los documentos de preparación y análisis debieran contener la mayor parte de la información para una correcta comprensión del procedimiento.</p>
+<p>No obstante, es relevante precisar de qué manera estos documentos se vinculan con otros archivos dentro del proyecto.</p>
+<p>Por un lado, el documento de preparación requiere de una fuente de datos inicial, por tanto está directamente relacionada con la carpeta Input y la subcarpeta de datos originales.</p>
+<p>Por otro lado, el documento de análisis requiere de una fuente de datos procesada, por tanto está directamente relacionada con la carpeta Input y la subcarpeta de datos procesados.</p>
+<p>Además, se debe tener en consideración que los productos del análisis, es decir, los resultados de la investigación, pueden ser reportados en forma de figuras o tablas, las cuales son almacenadas en la carpeta Output y en las subcarpetas imágenes y tablas, respectivamente.</p>
+<p>Para una correcta ejecución de las rutinas de código, es importante describir adecuadamente la relación entre los archivos de preparación y análisis. Para ello, se sugiere incorporar un archivo de nombre “readme-proc.md/txt/pdf”, en donde se describa brevemente dicha vinculación. Para ello sugerimos los siguientes puntos a describir:</p>
+<ol style="list-style-type: decimal">
+<li>Para la ejecución de la preparación, precisar la ubicación de la o las fuentes de datos originales. (p.ej. “input/data/original/original-data.dta”)</li>
+<li>Para el cierre de la preparación, precisar la ruta donde se deben almacenar la base de datos procesada y su extensión (p.ej. “input/data/original/proc-data.RData”)</li>
+<li>Para la ejecución de los análisis se debe precisar el origen de la base procesada que fue creada en el punto 2.
+. Para los archivos de resultados provenientes del análisis de los datos, tales como figuras o tablas, debemos precisar la ruta donde se almacenarán y su nombre.</li>
+</ol>
+</div>
+<div id="resultados" class="section level4" number="2.3.1.4">
+<h4><span class="header-section-number">2.3.1.4</span> Resultados</h4>
+<p>Con los resultados, nos referimos a las figuras, gráficos o tablas que son producto de nuestro análisis y que serán relevantes de alguna forma para el artículo. Comúnmente, los protocolos para la organización de las carpetas proponen que todo lo que esté relacionado a los resultados se guarde en una carpeta a parte. Por ejemplo, el protocolo IPO propone albergar tablas y figuras en las subcarpetas <em>tables</em> e <em>images</em> dentro de la carpeta <em>output</em>.</p>
+<p>Tomando como ejemplo el uso del protocolo IPO, sugerimos que para una correcta identificación de cada archivo se sigan las siguientes indicaciones:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Para las imágenes, sugerimos usar nombres breves e incorporar numeración. Por ejemplo “figura01.png”, según el orden de aparición en la publicación.</p></li>
+<li><p>Para el caso de los cuadros o tablas, existen distintas extensiones para almacenarlas como archivos independientes (tex/txt/md/html/xls). Para ello, sugerimos emplear nombres cortos e incorporar numeración. Por ejemplo, “tabla01.xls”, según el orden de aparición en la publicación.</p></li>
+</ol>
+</div>
+</div>
+<div id="texto-plano-y-documentos-dinámicos" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Texto plano y documentos dinámicos</h3>
+<p>Adoptar ciertas prácticas en lo que respecta a la estructura de un proyecto es el primer paso en el espectro de reproducibilidad. El segundo paso que proponemos acá es el uso de texto plano y documentos dinámicos.</p>
+<p>Probablemente, el programa que más se ha utilizado para la escritura, desde la formación de pregrado hasta el trabajo cotidiano como investigador, sea Microsoft Word. Sin duda, es una herramienta sumamente útil, cuenta varias funciones que permiten ordenar y hacer más estéticos nuestros documentos, pero la pregunta que es necesario hacerse es ¿es Microsoft Word un formato reproducible? La respuesta es <strong>no</strong>. Aunque Microsoft Word sea un formato de archivo ampliamente conocido, necesitamos algún tipo de lector asociado al formato .docx (u otro similar) para poder leer los archivos. Esto implica que solamente las personas que tengan instalado algún lector para este tipo de documentos serán capaces de acceder al contenido, lo cual va en contra de la idea de reproducibilidad.</p>
+<p>Ahora, también es cierto que el formato de Word está tan extendido, que es realmente difícil que alguien no tenga disponible un lector de este tipo de archivos. Sin embargo, el real problema está con quien es dueño de ese contenido. Acá no nos inmiscuiremos en temas de propiedad intelectual, pero si es importante hacerse la pregunta sobre quien es dueño de lo que escribimos si el medio por donde estamos escribiendo no es propiedad nuestra. Es cosa de imaginarse que, de un día para otro, todo programa asociado a Microsoft desapareciera por alguna razón, todos nuestros documentos quedarían obsoletos. Aquí es donde entra el texto plano.</p>
+<p>El texto plano es, simplemente, un tipo de texto que se puede leer independiente del lector que se use. Un ejemplo simple es escribir en el bloc de notas de Windows. El texto plano es importante cuando buscamos avanzar hacia la reproducibiliad por dos razones. Primero, es un tipo de texto universal, lo que da la ventaja de que, en principio, cualquier persona será capaz de leer algo escrito en este formato. Segundo, sienta las bases para que surjan lenguajes que permiten sofisticar el formato de los documentos, pero que sigan teniendo el carácter universal del texto plano. Los ejemplos más conoocidos son LaTeX y Markdown.</p>
+<p>La descripción en detalle del lenguaje LaTeX y Markdown no son objetivo de este capitulo, pero si es importante tenerlos en cuenta ya que han dado paso a una de las herramientas más utilizadas en la ciencia abierta: los documentos dinámicos. Estos son documentos que incluyen, a la par, texto plano y código. Es decir, ya no es necesario que utilicemos una hoja de código para generar un gráfico y luego pegarlo en un documento Word para escribir nuestro artículo, sino que podemos hacer todo esto en un mismo archivo. Además de hacer nuestro flujo de trabajo más eficiente, también hace más fácil reproducir los archivos. Por ejemplo, si quisiéramos que un colega revisara nuestro artículo, bastaría con que le enviáramos el documento dinámico que contiene tanto el código como el escrito. Así, él podría revisar la escritura del documento, y además, evaluar si los análisis han sido efectuados correctamente.</p>
+</div>
+<div id="control-de-versiones" class="section level3" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> Control de versiones</h3>
+</div>
+<div id="prácticas-de-código" class="section level3" number="2.3.4">
+<h3><span class="header-section-number">2.3.4</span> Prácticas de código</h3>
+<p>Hasta ahora, hemos procurado que la presentación de la información sea lo más general posible y que no esté relacionada a un software estadístico único. Bajo esa idea, hemos presentado lo que es una estructura reproducirle de un proyecto, aludiendo a los elementos comunes que se encuentran en distintos protocolos. También, revisamos como el control de versiones y el trabajo con documentos dinámicos pueden ser herramientas para la reproducibilidad. No obstante, hemos eludido lo que, desde un principio, establecimos como el núcleo de la rerproducibilidad: el trabajo con código.</p>
+<p>Este capitulo busca ser una primera aproximación y enseñar lo básico respecto a reproducibiliad. Con tal de mantenernos bajo esa idea, trataremos el trabajo con código de forma abstracta, sin introducirnos especificamente a trabajr con un software (esto será tarea para otro escrito). Especificamente, veremos algunas <strong>prácticas de código</strong> que contriubuyen a hacer un trabajo más reprodcuible. Estas son aplicables a distintos software que utilicen código, y cuando nos estemos refiriendo a un software especifico lo señalaremos.</p>
+<ul>
+<li><p><strong>Nunca hacer trabajo manual.</strong> EL objetivo de la reproducibiliudad es que cualquier persona pueda regenerar nuestro trabajo, y el trabajo manual es un obstáculo para el cumplimiento de ese objetivo. Trabajar con código permite automatizar los procesos de tratamiento y análisis de datos, es como establecer un guión paso a paso sobre lo que se ha hecho para llegar a los resultados del artículo, en contraste, documentar un proceso de análisis manual (e.g. en una planilla de datos) es una tarea sumamente compleja. Si bien, es posible escribir un guión detallado de cada paso, esto tomaría una cantidad de tiempo y energía considerables, más aun teniendo en cuenta la cantidad de decisiones que tiene que tomar un equipo de investigación en el proceso de análisis de datos. Es por eso que la recomendación base es no hacer trabajo manual y trabajar con código, lo que implica evitar software como Microsoft Excel y otros relacionados.</p></li>
+<li><p><strong>Asegurarse que el código siempre produzca el mismo resultado</strong>. Nuestra hoja de código será la receta que otro seguirá para poder elaborar el mismo producto, por lo que tenemos que asegurarnos que esta produzca siempre lo mismo. Un ejemplo es cuando por algún tipo de análisis se necesitan generar números aleatorios. En R, para poder reproducir la generación de esos números aleatorios se utiliza la función <code>set.seed()</code>.</p></li>
+<li><p><strong>Trabajar con scripts</strong>. Para poder automatizar el procesamiento y análisis de los datos, la principal recomendación es trabajar con documentos “script” que albergan el código y permiten su rápida ejecución. En el caso de R, se pueden utilizar documentos .R.</p></li>
+<li><p><strong>Escribir con minúscula, sin espacios, sin ñ y sin tildes.</strong> Gran parte de los software disponibles para análisis de datos traen el inglés como idioma nativo, por lo que existe una alta probabilidad de que tengamos problemas si utilizamos caracteres especiales que no se encuentran en ese idioma. Respecto al uso de mayusculas, existen software que diferencian cuando un código incluye mayúsculas y cuándo no, esto es una característica conocida como <em>case sensitive</em>. Sin embargo, no todos los software cuentan con esta característica, por lo que es mejor evitar su uso.</p></li>
+<li><p><strong>Indentar el código</strong>. La indentación es una característica del trabajo con código en general (no solo a nivel de software estadístico) y se refiere a la jerarquía en los niveles del código. Indentar permite una lectura más fácil del código, ya que permite comprenbder visualmente el orden y la estructura del código. Uno de los ejemplos más conocidos es la elaboración de funciones condicionales de tipo <code>if-else</code>.</p></li>
+<li><p><strong>Comentar el código</strong>. Comentar el código es sustancial para que cualquier persona no asociada al proyecto (o incluso uno mismo en el futuro) pueda entender para qué sirve cada función y reproducir el documento sin problemas. Aquí el lema es: nunca es mucho cuando se refiere a comentar el código. Mientras mejor explicado esté qué hace cada cosa y por qué, la receta será más fácil de seguir.</p></li>
+<li><p><strong>Especificar las versiones de paquetes.</strong> Gran parte de los sofrware estadísticos trabajan en base a la idea de <em>paquetes</em>. Esto son un conjunto de herramientas que facilitan el trabajo con datos. Existen paquetes tanto para tareas simples como el tratamiento de bases de datos o la generacióbn de gráficos, asi como para técnicas estadísticas avanzadas. No obstante, una caracteristica a tener en cuenta es que los paquetes tienen versiones, ya que van mejorando día tras día. Esto ocurre especialmente en software de código abierto como R o Python. A raíz de esto, es que una de las recomendaciones para la reproducibilidad es conocer con qué versión de los paquetes se está trabajando y documentarlo. Inclusive, en software como R existen herramientas que permiten facilitar esta tarea (ver <a href="https://groundhogr.com/">groundhog</a>)</p></li>
+<li><p><strong>Elaborar código autocontenido.</strong> Existen dos formas de trabajar con código. La primera es el trabajo tipo “cascada”, donde el código es como agua que fluye desde arriba hacia abajo. Esta metáfora significa que cada código es parte de un todo interdependiente, y como tal, cada bloque depende del anterior. Un ejemplo simple es que en con un bloque de código se carga una base de datos y con otro se presenta un gráfico de la misma. En contraste a esta forma de trabajo, existe una segunda de tipo “autocontenida”. Esta forma implica que, en vez de que el código sea interdependiente entre si, cada bloque de código es una tarea que inicia y finaliza en el mismo bloque. Siguiendo el ejemplo, esto implicaría que cargar la base de datos y mostrar un gráfico de ella es una tarea que comienza y termina en el mismo bloque de código. Si bien ya el trabajar con código ya es un avance hacia la reproducibilidad, trabajar de manera autocontenida es un paso mucho mayor, ya que minimiza la probabilidad de que el código no pueda ser reproducido por un tercero.</p></li>
+<li><p><strong>Nombrar variables de manera óptima.</strong> Como se señaló anteriormente, muchas veces los nombres de las variables en las bases de datos siguen una lógica más técnica que sustantiva. Es por eso que, para poder trabajar de manera óptima y que, al mismo tiempo, el código sea más fácil de leer se sugiere renombrar las variables de forma <em>sustantiva</em> y <em>corta</em>. Por ejemplo, si una variable de <em>edad</em> de una encuesta tiene por nombre <code>m01</code>, sugerimos cambiarlo a <code>edad</code>.</p></li>
+<li><p><strong>Etiquetado o buen diccionario de variables</strong>. Además de renombrar las variables, recomendamos etiquetar de forma sustantiva las variables que se utilizarán y/o hacer un buen diccionario de ellas. Esto tiene por objetivo que la base de datos que hayamos elaborado para nuestros análisis sea más fácil de leer y reproducir.</p></li>
+<li><p><strong>Utilizar UTF8</strong>. Como señalamos, recomendamos evitar el uso de caracteres especiales en trabajo con código, esto implica el uso de tildes o ñ. No obstante, para ciertas situaciones será indispensable que escribamos en nuestro idioma nativo (en este caso español), y por ende utilizar caracteres especiales. Un ejemplo es cuando establecemos los títulos y categorías de una tabla o un gráfico. En estos casos, sugerimos establecer el formato del documento de código en formato UTF-8. Este formato es de tipo universal y acepta todo tipo de caracteres, incluyendo los especiales.</p></li>
+<li><p><strong>Trabajar con rutas relativas</strong>. Las rutas relativas son una ubicación en el computador que es relativa a un directorio base o carpeta raíz. En el caso del trabajo con datos, generalmente la carpeta raíz es la que alberga todos los documentos que refieren a ese proyecto y las rutas relativas son direcciones hacia distintos archivos teniendo como base la carpeta raíz. Esta es una forma reproducible de ordenar los archivos ya que no depende de quién está trabajando.</p></li>
+<li><p><strong>Uso de software libre.</strong> Con los nuevos avances en la tecnología y en el acceso a ella han emergido iniciativas colaborativas de desarollo de software. Esto implica que en vez de estar centralizado por una compañía, quien está detrás de los avances en el desarrollo del software es una comunidad activa de usuarios. Software como R y Python son ejemplos de este tipo de iniciativas. Recomendamos el uso de software libre porque, además de alinearse con los principios de la ciencia abierta, proveen un ambiente y herramientas mucho más propenso a adoptar prácticas que avancen hacia la reproducibilidad.</p></li>
+<li><p><strong>Estar en contacto con la comunidad de investigadores y/o desarrolladores de herramientas computacionales</strong>. Más que una práctica relacionada al código, es una recomendación respecto a como hacer más óptimo nuestro trabajo. Con internet y las nuevas herrasmientas computacionales, existen varias comunidades a las cuales recurrir en caso de necesitar ayuda con el desarrollo del código. Por ejemplo,
+Stack Overflow es un foro donde programadores, ingenieros y en general cualquier persona que utiliza código en su día a día puede hacer o responder preguntas respecto a código. Es una gran herramienta para cuando los códigos no funcionan o cuando queremos conocer formas más eficientes de hacer una tarea. Incluimos esta recomendación porque participar de estos foros y ser parte activa de la comunidad implica adoptar prácticas para la reproducibilidad, con tal de que otros puedan entender nuestras preguntas y respuestas.</p></li>
+</ul>
+
+</div>
+</div>
+<!-- </div> -->
+<hr>
+<center> 
+  <div class="footer">
+      Laboratorio de Ciencia Social Abierta <a href="https://lisa-coes.netlify.app/"> (LISA) </a> del Centro de Estudios de Conflicto y Cohesión Social (COES) <a href="https://coes.cl/"></a>
+      <br>
+      Para más información puedes contactárnos <a href= "lisa@coes.cl"> en nuestro correo </a>
+  </div>
+</center>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="qué-se-ha-hecho.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["transparency.pdf", "transparency.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
