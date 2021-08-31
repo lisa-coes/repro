@@ -13,7 +13,7 @@ Veamos cada uno de ellos.
 
 ### Estructura del proyecto
 
-Una de las principales cosas que debemos considerar al elaborar un proyecto es su estructura de carpetas y archivos, esta nos permita entender e identificar los archivos existentes y rol en el flujo de trabajo. En este sentido, una de las herramientas que han sido desarrolladas son los denominados **Protocolos** (p. ej. TIER, DRESS, IPO), los cuales brindan una serie de orientaciones referentes a estructura digital de carpetas, documentación de archivos y rutinas para conseguir el anhelado objetivo de los **análisis reproducibles**. Para esto, es posible mencionar una serie de orientaciones generales referentes a dichos procedimientos, por ejemplo en el Proyecto TIER **[CITAR]** se han desarrollado protocolos orientados a la reproducibilidad de los análisis, los cuales se fundamentan en tres principios que se describen a continuación.  
+Una de las principales cosas que debemos considerar al elaborar un proyecto es su estructura de carpetas y archivos, esta nos permita entender e identificar los archivos existentes y rol en el flujo de trabajo. En este sentido, una de las herramientas que han sido desarrolladas son los denominados **Protocolos** (p. ej. TIER, DRESS, IPO), los cuales brindan una serie de orientaciones referentes a estructura digital de carpetas, documentación de archivos y rutinas para conseguir el anhelado objetivo de los **análisis reproducibles**. Para esto, es posible mencionar una serie de orientaciones generales referentes a dichos procedimientos, por ejemplo en el Proyecto TIER [(TIER, 2020)](https://www.projecttier.org/tier-protocol/protocol-4-0/){target="_blank"} se han desarrollado protocolos orientados a la reproducibilidad de los análisis, los cuales se fundamentan en tres principios que se describen a continuación.  
 
 (i) _Reproducibilidad_: La documentación debe permitir regenerar completamente los resultados del estudio original. En primer lugar, se debe comenzar con los datos originales brutos idénticos a aquellos con los que el autor comenzó la investigación, Luego, la posibilidad de realizar las mismas rutinas de código para preparar los datos finales para el análisis. Finalmente, se debe disponer de las rutinas de código que permitan regenerar los mismos resultados publicados, por ejemplo, las tablas o figuras presentes en la investigación.
 
@@ -33,23 +33,30 @@ Antes de detallar los tres elementos que se deben considerar para avanzar en el 
 
 A modo de ir avanzando en el espectro de reproducibilidad, es importante tener en consideración dos principios en relación a la carpeta raíz: **documentar** y **orientar**. La documentación implica exponer ordenadamente el contenido del proyecto completo de manera jerárquica, es decir, el contenido de subcarpetas y su funciones. En cambio, orientar implica conducir una correcta ejecución de las rutinas que permitan regenerar los resultados de la investigación. Una carpeta base que logre considerar estos principios debe tener los siguientes contenidos:  
 
-1. Detalle de la base y las subcarpetas organizadas según su contenido. Una manera amigable de representar esta estructura es a través de un “árbol de directorios”, el cual ilustra la jerarquía de las carpetas y los principales archivos contenidos
+1. Detalle de la base y las subcarpetas organizadas según su contenido. Una manera amigable de representar esta estructura es a través de un [“árbol de directorios”](https://www.youtube.com/watch?v=clGMdaMiJ_0){target="_blank"}, el cual ilustra la jerarquía de las carpetas y los principales archivos contenidos.
 
-  > Tip: Cómo generar un directory tree automatizado en [Windows](t.ly/c58k),[linux](t.ly/WlMC) y [MacOS](t.ly/ZCXK)
+<style>
+div.blue { background-color:#ec8686; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
 
-2. Instrucciones para la configuración (_setup_) del paquete estadístico necesario para ejecutar las rutinas de código. Esto considera el número de versión del software, los complementos necesarios que sean adicionales al paquete estándar y cualquier otra información especial sobre el software que el lector necesite conocer para reproducir los resultados del estudio.  
+ > `r icon::fa_search(colour = "#1FA67A")`: Cómo generar un _directory tree_ automatizado en [Windows](t.ly/c58k){target="_blank"},[linux](t.ly/WlMC){target="_blank"} y [MacOS](t.ly/ZCXK){target="_blank"}
 
-3. Instrucciones de “inicio-a-fin” para regenerar los resultados a través de referencias directas al uso de los archivos de procesamiento de datos en la preparación y análisis. En este apartado se incluye el detalle de los objetivos de cada rutina de código de manera independiente.  
+</div>
 
 
-Los contenidos descritos se deben incluir en un archivo que lleve de nombre “readme.md/txt/pdf”. Una sugerencia de estructura interna de este documento es la siguiente:  
+2. Instrucciones para la configuración del paquete estadístico necesario para ejecutar las rutinas de código. Esto considera el número de versión del software, los complementos necesarios que sean adicionales al paquete estándar y cualquier otra información especial sobre el software que el lector necesite conocer para reproducir los resultados del estudio.  
+
+3. Instrucciones de “inicio-a-fin” para regenerar los resultados a través de referencias directas al uso de los archivos de procesamiento de datos en la preparación y análisis. En este apartado se deben incluir detalladamente de los objetivos de cada rutina de código de manera independiente.  
+
+Los contenidos descritos deben incluir en un archivo que lleve de nombre “readme.md/txt/pdf”. Una sugerencia de estructura interna de este documento es la siguiente:  
 
 1. Estructura y contenido del proyecto reproducible
     * Esquema tipo "Árbol de directorios"
     * Descripción de cada subcarpeta, sus archivo y roles
 2. Instrucciones y rutinas de ejecución de resultados
     * Instrucciones para configuración del software
-    * Instrucciones para la ejecución de rutinas de código de "inicio-a-fin".
+    * Instrucciones para la ejecución de rutinas de código de "inicio-a-fin"
     
 Con este archivo “readme.md/txt/pdf” ya contamos con el primer gran paso hacia la reproducibilidad: nuestra carpeta raíz está bien documentada y logra orientar bien cualquier tercero que quiera reproducir nuestra investigación. Con esto descrito, pasaremos a detallar los tres elementos a considerar para adoptar un enfoque reproducible en un proyecto (Datos-Método-Resultados)  
 
@@ -121,7 +128,7 @@ Al igual que para la sección de procesamiento de datos, aquí también recomend
 
 Para una correcta comprensión de los documentos de procesamiento y análisis es importante tener una descripción adecuada de cada una de sus partes, o dicho de otra forma, una correcta **documentación**. Es relevante precisar de qué manera estos documentos se vinculan con otros archivos dentro del proyecto, para lo cual podemos tomar el ejemplo del protocolo IPO. Por un lado, el documento de preparación requiere de una fuente de datos inicial, por tanto está directamente relacionada con la carpeta Input y la subcarpeta de datos originales. Por otro lado, el documento de análisis requiere de una fuente de datos procesada, por tanto está directamente relacionada con la carpeta Input y la subcarpeta de datos procesados.
 
-Para una correcta ejecución de las rutinas de código, es importante describir adecuadamente la relación entre los archivos de preparación y análisis. Para ello, se sugiere incorporar un archivo de nombre “readme-proc.md/txt/pdf”, en donde se describa brevemente dicha vinculación. Para ello sugerimos los siguientes puntos a describir:
+Para una correcta ejecución de las rutinas de código, es importante describir adecuadamente la **relación** entre los archivos de preparación y análisis. Para ello, se sugiere incorporar un archivo de nombre “readme-proc.md/txt/pdf”, en donde se describa brevemente dicha vinculación. Para ello sugerimos los siguientes puntos a describir:
 
 1. Para la ejecución de la preparación, precisar la ubicación de la o las fuentes de datos originales. (p.ej. “input/data/original/original-data.dta”)
 2. Para el cierre de la preparación, precisar la ruta donde se deben almacenar la base de datos procesada y su extensión (p.ej. “input/data/original/proc-data.RData”)
@@ -130,7 +137,7 @@ Para una correcta ejecución de las rutinas de código, es importante describir 
 
 #### Resultados
 
-Con los resultados, nos referimos a las figuras, gráficos o tablas que son producto de nuestro análisis y que serán relevantes de alguna forma para el artículo. Comúnmente, los protocolos para la organización de las carpetas proponen que todo lo que esté relacionado a los resultados se guarde en una carpeta a parte. Por ejemplo, el protocolo IPO propone albergar tablas y figuras en las subcarpetas _tables_ e _images_ dentro de la carpeta _output_.
+Con los resultados, nos referimos a las figuras, gráficos o tablas que son producto de nuestro análisis y que serán relevantes de alguna forma para el estudio. Comúnmente, los protocolos para la organización de las carpetas proponen que todo lo que esté relacionado a los resultados se guarde en una carpeta a parte. Por ejemplo, el protocolo IPO propone albergar tablas y figuras en las subcarpetas _tables_ e _images_ dentro de la carpeta _output_.
 
 Tomando como ejemplo el uso del protocolo IPO, sugerimos que para una correcta identificación de cada archivo se sigan las siguientes indicaciones:
 
@@ -151,7 +158,7 @@ El texto plano es, simplemente, un tipo de texto que se puede leer independiente
 
 La descripción en detalle del lenguaje LaTeX y Markdown no son objetivo de este capitulo, pero si es importante tenerlos en cuenta ya que han dado paso a una de las herramientas más utilizadas en la ciencia abierta: los documentos dinámicos. Estos son documentos que incluyen, a la par, texto plano y código. Es decir, ya no es necesario que utilicemos una hoja de código para generar un gráfico y luego pegarlo en un documento Word para escribir nuestro artículo, sino que podemos hacer todo esto en un mismo archivo. Además de hacer nuestro flujo de trabajo más eficiente, también hace más fácil reproducir los archivos. Por ejemplo, si quisiéramos que un colega revisara nuestro artículo, bastaría con que le enviáramos el documento dinámico que contiene tanto el código como el escrito. Así, él podría revisar la escritura del documento, y además, evaluar si los análisis han sido efectuados correctamente.
 
-Para entrar en detalle, las distintas formas de documentos dinámicos dependen del software que se vaya a emplear para la programación del código. Por ejemplo, los documentos RMarkdown son el lenguaje que permite generar docuemntos dinámicos a través del software R, en tanto, los Jupyter Notebooks son documentos dinámicos para Python. Veamos cómo funciona cada uno brevemente.
+Para entrar en detalle, las distintas formas de documentos dinámicos dependen del software que se vaya a emplear para la programación del código. Por ejemplo, los documentos RMarkdown son el lenguaje que permite generar docuemntos dinámicos a través del software R, en tanto, los Jupyter Notebooks son documentos dinámicos para Python. Veamos cómo funciona cada uno. brevemente.
 
 **RMarkdown**
 
@@ -164,11 +171,18 @@ La caracteristica más importante de RMarkdown, es que la combinación del lengu
 Jupyter Notebook es un tipo de documento dinámico que combina lenguaje marcado tipo Markdown con código de Python. Al igual que RMarkdown, todo lo que escribamos en los Jupyter Notebook será considerado como lenguaje marcado. La diferencia que tiene con RMarkdown es que el documento va renderizando las marcas e indicaciones de código en tiempo real. Es decir, si escribimos en negrita, títulos de distinta jerarquía o añadimos gráficos o tablas el documento lo mostrará inmediatamente. Para más información sobre cómo utilizar Jupyter Notebook ver [aquí](https://jupyter-notebook.readthedocs.io/en/stable/).
 
 
+**Stata Markdown**
+
+Ver aquí: https://data.princeton.edu/stata/markdown
+
 ### Control de versiones
 
-El control de versiones es la tercera herramienta para la reproducibilidad que queremos presentar. Esas son herrameintas de software para gestionar los cambios en los documentos. ¿Alguna vez has utilizado Google Docs para trabajar colaborativamente? Pues, esta es un ejemplo cotidiano del control de versiones. Google Docs permite rastrear quién hizo que cambio y cuándo. Además, permite restaurar un documento de una versión anterior. Sin embargo, Google Docs no es tan útil cuando el trabajo que debemos realizar el programas código.
+El control de versiones es la tercera herramienta para la reproducibilidad que queremos presentar. Esas son herramientas de software para gestionar los cambios en los documentos. ¿Alguna vez has utilizado Google Docs para trabajar colaborativamente? Pues, esta es un ejemplo cotidiano del control de versiones. Google Docs permite rastrear quién hizo que cambio y cuándo. Además, permite restaurar un documento de una versión anterior. Sin embargo, Google Docs no es tan útil cuando el trabajo que debemos realizar el programas código.
 
-Para el control de versiones de códigos existen distintas herramientas, donde quizás la más conocida es Git...
+
+
+
+Para el control de versiones de códigos existen distintas herramientas, donde quizás la más conocida en el mundo de la programación es Git...
 
 ### Prácticas de código
 
