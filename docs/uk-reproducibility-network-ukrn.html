@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social</title>
+  <title>2.3 UK Reproducibility Network (UKRN) | Reproducibilidad en Investigación Social</title>
   <meta name="description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta property="og:title" content="2.3 UK Reproducibility Network (UKRN) | Reproducibilidad en Investigación Social" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/lisa-coes/repro" />
   <meta property="og:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="lisa-coes/repro" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta name="twitter:title" content="2.3 UK Reproducibility Network (UKRN) | Reproducibilidad en Investigación Social" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="twitter:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
-<link rel="prev" href="uk-reproducibility-network-ukrn.html"/>
-<link rel="next" href="estructura-del-proyecto.html"/>
+<link rel="prev" href="proyecto-tier-teaching-integrity-in-empirical-research.html"/>
+<link rel="next" href="herramientas-para-los-análisis-reproducibles.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -161,17 +161,44 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="images/lisa-complete.png">
 </div>
-<div id="herramientas-para-los-análisis-reproducibles" class="section level1" number="3">
-<h1><span class="header-section-number">Capítulo 3</span> Herramientas para los análisis reproducibles</h1>
-<p>Generalmente, cuando se habla de reproducibilidad se toma en consideración su dimensión computacional, esto es, el trabajo con código. Como investigadores de las ciencias sociales empíricas y promotores de la ciencia abierta creemos que efectivamente este es el núcleo de la reproducibilidad, sin embargo no es su única acepción. La mera existencia de un código de análisis no nos garantiza que un proyecto sea reproducible <em>per se</em>, dado que es importante tener en consideración <em>cómo</em> es que distintos elementos del proyecto se relacionan entre sí para <em>regenerar</em> los resultados de un trabajo publicado. Considerando esto, es que dividiremos esta sección presentando un <em>flujo de trabajo reproducible</em> con cuatro características:</p>
-<ol style="list-style-type: decimal">
-<li>Estructura del proyecto</li>
-<li>Documentos dinámicos</li>
-<li>Control de versiones</li>
-<li>Prácticas de código</li>
-</ol>
-<p>Veamos cada uno de ellos.</p>
+<div id="uk-reproducibility-network-ukrn" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> UK Reproducibility Network (UKRN)</h2>
+<p><img src="docs/images/UKRN-Logo.png" width="75%" style="display: block; margin: auto;" /></p>
+<div id="objetivos-y-visión-2" class="section level3 unnumbered">
+<h3>Objetivos y visión</h3>
+<p>La UK Reproducibility Network (UKRN) es un consorcio institucional del Reino Unido que tiene por objetivo promover los principios y prácticas de la ciencia abierta con una mirada local, es decir, en las instituciones nacionales y sus investigadores. Para contribuir a este objetivo se realizan esfuerzos en torno a la investigación de los factores que determinan una investigación abierta y robusta, promoviendo el entrenamiento a través de actividades abiertas y diseminando las buenas prácticas para una ciencia abierta. En particular, se proponen a profundizar en los factores que determinan la carencia de <strong>reproducibilidad</strong> y <strong>replicabilidad</strong>, para lo cual se busca:</p>
+<ul>
+<li>Desarrollar aproximaciones que contrarresten esta falta de transparencia.</li>
+<li>Incrementar la confianza y la calidad de la investigación científica.</li>
+<li>Abordar de manera transversal estos problemas en las distintas disciplinas científicas.</li>
+<li>Avanzar hacia un cambio cultural en la ciencia y transformar las prácticas de quienes la desarrollan.</li>
+</ul>
+<p>En la UKRN se caracteriza por un trabajo en red, es decir por un importante componente de vinculación entre instituciones de investigación vinculadas a universidades como también a oficinas gubernamentales que desarrollan investigación (ver <a href="https://www.ukrn.org/stakeholders/">External Stakeholders</a>) . En esta línea, existen diversas iniciativas apoyadas por la UKRN que promueven el entrenamiento, metodologías y recursos tecnológicos para la ciencia abierta. A continuación se presentarán algunas de las contribuciones más relevantes realizadas por la red, como también algunas de las iniciativas externas que han sido respaldadas por la UKRN.</p>
 </div>
+<div id="contribución-2" class="section level3 unnumbered">
+<h3>Contribución</h3>
+<p>En el ámbito de la <strong>Educación</strong> y <strong>Entrenamiento</strong>, es posible identificar, por un lado, las contribuciones realizadas directamente por la UKRN, y por otro lado, las iniciativas que son respaldadas por la red y que promueven la formación en torno a los principios y prácticas de la ciencia abierta, particularmente en la etapa temprana de la carrera de investigación.</p>
+<p>Respecto a una de las iniciativas elaboradas por los académicos e investigadores involucrados en la UKRN, encontramos unos de los principales recursos virtuales en un breve curso online que aborda una serie de tópicos relevantes para la promoción de la ciencia abierta, dentro de lo cual encontramos el uso de pre-prints, autorías, registered reports, datos abiertos y reproducibilidad. A continuación se puede observar la lista de sesiones que han sido desarrolladas en torno a estos temas.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLehgGZrvxReSisRauEJ2DxPAIYVVEr1qC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<p>Junto con las sesiones, existe una serie de recursos compartidos a través de un proyecto abierto en el <a href="https://osf.io/x8j9q/">Open Science Framework</a>. Aquí es posible acceder a documentos breves que abordan los tópicos de cada sesión, además de <a href="https://osf.io/qw9ck/">recursos adicionales</a> sobre uso de software de código abierto y repositorios.</p>
+<p>Un ámbito de desarrollo ha sido la disposición de <strong>recursos tecnológicos</strong> que promuevan y faciliten las prácticas en ciencia abierta. Una de las iniciativas impulsadas es el <a href="https://openresearchcalendar.org/"><strong>Open Research Calendar</strong></a>, el cual consiste en una instrumento colaborativo y abierto que busca brindar a la comunidad de investigadores interesados en temas relacionados a la ciencia abierta un flujo constante de actualizaciones en torno a workshops y conferencias a nivel mundial que abordan tópicos sobre ciencia abierta unificados en un calendario. El carácter <strong>colaborativo</strong> de esta herramienta permite que usuarios previamente registrados y validados puedan contribuir con información que se centraliza en el calendario de eventos, precisando los contenidos y redireccionando a la inscripción y/o enlace para las actividades que se realizan a través de internet. Para facilitar la experiencia de usuario, el calendario se integra con Google Calendar el cual puede sincronizarse con la agenda personal, los cuales se van actualizando automáticamente.</p>
+<p>Otra herramienta tecnológica patrocinada por la UKRN es la plataforma <a href="https://science-octopus.org/">Octopus</a>. A la fecha, la plataforma se presenta como una aplicación en desarrollo y abierta a comentarios de los usuarios. En términos generales se propone ser una alternativa para contribuir a la apertura de publicaciones. El detalle se presenta así:</p>
+<blockquote>
+<p>(…) sustituir a las revistas y los artículos como lugar para establecer la prioridad y registrar su trabajo con todo detalle, Octopus es de uso gratuito y publica todo tipo de trabajos científicos, ya sea una hipótesis, un método, datos, un análisis o una revisión por pares (traducción propia).</p>
+</blockquote>
+<p>La Figura <a href="uk-reproducibility-network-ukrn.html#fig:octopus">2.2</a> ilustra un ejemplo de cómo se ve un proyecto en Octopus. Vemos que existen siete componentes que buscan representar el flujo de una investigación. Entendiendo que los procesos de investigación no son lineales y tienden a existir iteraciones en entre teoría y métodos, la virtud de la registro y publicación de un proyecto permite que otros puedan conocer y evaluar nuestras hipótesis, plan de análisis, resultados y versiones de un artículo, así como también la vinculación entre cada sección.</p>
+<div class="figure" style="text-align: center"><span id="fig:octopus"></span>
+<img src="docs/images/octopus.PNG" alt="Ejemplo de un trabajo registrado en desarrollo en octopus.org" width="75%" />
+<p class="caption">
+Figura 2.2: Ejemplo de un trabajo registrado en desarrollo en octopus.org
+</p>
+</div>
+<p>Para publicar debemos <a href="https://science-octopus.org/publish">logearnos</a> con una cuenta de ORCID. Si no tienes una cuenta puedes crear un perfil <a href="https://orcid.org/">aquí</a>. Luego, se deben seguir tres pasos. El primero es elegir qué tipo de componente se desea publicar (Problema, Hipótesis, Métodos, etc). Segundo, dar detalles sobre el componente y con qué otros proyectos se relaciona. Y finalmente, contribuir con un borrador de escritura que luego será publicado.</p>
+
+</div>
+</div>
+<!-- </div> -->
 <hr>
 <center> 
   <div class="footer">
@@ -186,8 +213,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="uk-reproducibility-network-ukrn.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="estructura-del-proyecto.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="proyecto-tier-teaching-integrity-in-empirical-research.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="herramientas-para-los-análisis-reproducibles.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

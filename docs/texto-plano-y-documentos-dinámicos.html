@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social</title>
+  <title>3.2 Texto plano y documentos dinámicos | Reproducibilidad en Investigación Social</title>
   <meta name="description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta property="og:title" content="3.2 Texto plano y documentos dinámicos | Reproducibilidad en Investigación Social" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/lisa-coes/repro" />
   <meta property="og:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="lisa-coes/repro" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta name="twitter:title" content="3.2 Texto plano y documentos dinámicos | Reproducibilidad en Investigación Social" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="twitter:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
-<link rel="prev" href="uk-reproducibility-network-ukrn.html"/>
-<link rel="next" href="estructura-del-proyecto.html"/>
+<link rel="prev" href="estructura-del-proyecto.html"/>
+<link rel="next" href="control-de-versiones.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -161,16 +161,27 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="images/lisa-complete.png">
 </div>
-<div id="herramientas-para-los-análisis-reproducibles" class="section level1" number="3">
-<h1><span class="header-section-number">Capítulo 3</span> Herramientas para los análisis reproducibles</h1>
-<p>Generalmente, cuando se habla de reproducibilidad se toma en consideración su dimensión computacional, esto es, el trabajo con código. Como investigadores de las ciencias sociales empíricas y promotores de la ciencia abierta creemos que efectivamente este es el núcleo de la reproducibilidad, sin embargo no es su única acepción. La mera existencia de un código de análisis no nos garantiza que un proyecto sea reproducible <em>per se</em>, dado que es importante tener en consideración <em>cómo</em> es que distintos elementos del proyecto se relacionan entre sí para <em>regenerar</em> los resultados de un trabajo publicado. Considerando esto, es que dividiremos esta sección presentando un <em>flujo de trabajo reproducible</em> con cuatro características:</p>
-<ol style="list-style-type: decimal">
-<li>Estructura del proyecto</li>
-<li>Documentos dinámicos</li>
-<li>Control de versiones</li>
-<li>Prácticas de código</li>
-</ol>
-<p>Veamos cada uno de ellos.</p>
+<div id="texto-plano-y-documentos-dinámicos" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Texto plano y documentos dinámicos</h2>
+<p>Adoptar ciertas prácticas en lo que respecta a la estructura de un proyecto es el primer paso en el espectro de reproducibilidad. El segundo paso que proponemos acá es el uso de texto plano y documentos dinámicos.</p>
+<p>Probablemente, el programa que más se ha utilizado para la escritura, desde la formación de pregrado hasta el trabajo cotidiano como investigador, sea Microsoft Word. Sin duda, es una herramienta sumamente útil, cuenta varias funciones que permiten ordenar y hacer más estéticos nuestros documentos, no obstante, no es reproducible. Aunque Microsoft Word sea un formato de archivo ampliamente conocido, necesitamos algún tipo de lector asociado al formato .docx (u otro similar) para poder leer los archivos. Esto implica que solamente las personas que tengan instalado algún lector para este tipo de documentos serán capaces de acceder al contenido, lo cual va en contra de la idea de reproducibilidad.</p>
+<p>Ahora, también es cierto que el formato de Word está tan extendido, que es realmente difícil que alguien no tenga disponible un lector de este tipo de archivos. Sin embargo, el real problema está con quien es dueño de ese contenido. Acá no nos inmiscuimos en temas de propiedad intelectual, pero sí es importante hacerse la pregunta sobre quién es dueño de lo que escribimos si el medio por donde estamos escribiendo no es propiedad nuestra. Es cosa de imaginarse que, de un día para otro, todo programa asociado a Microsoft desapareciera por alguna razón, todos nuestros documentos quedarían obsoletos. Aquí es donde entra el texto plano.</p>
+<p>El texto plano es, simplemente, un tipo de texto que se puede leer independiente del lector que se use. Un ejemplo simple es escribir en el bloc de notas de Windows. El texto plano es importante cuando buscamos avanzar hacia la reproducibiliad por dos razones. Primero, es un tipo de texto universal, lo que da la ventaja de que, en principio, cualquier persona será capaz de leer algo escrito en este formato. Segundo, sienta las bases para que surjan lenguajes que permiten sofisticar el formato de los documentos, pero que sigan teniendo el carácter universal del texto plano. Los ejemplos más conoocidos son LaTeX y Markdown.</p>
+<p>La descripción en detalle del lenguaje LaTeX y Markdown no son objetivo de este capitulo, pero si es importante tenerlos en cuenta ya que han dado paso a una de las herramientas más utilizadas en la ciencia abierta: los documentos dinámicos. Estos son documentos que incluyen, a la par, texto plano y código. Es decir, ya no es necesario que utilicemos una hoja de código para generar un gráfico y luego pegarlo en un documento Word para escribir nuestro artículo, sino que podemos hacer todo esto en un mismo archivo. Además de hacer nuestro flujo de trabajo más eficiente, también hace más fácil reproducir los archivos. Por ejemplo, si quisiéramos que un colega revisara nuestro artículo, bastaría con que le enviáramos el documento dinámico que contiene tanto el código como el escrito. Así, él podría revisar la escritura del documento, y además, evaluar si los análisis han sido efectuados correctamente.</p>
+<p>Las distintas formas de documentos dinámicos dependen del software que se vaya a emplear para la programación del código. Según <span class="citation"><a href="#ref-schindler_Investigating_2021" role="doc-biblioref">Schindler, Zapilko, y Krüger</a> (<a href="#ref-schindler_Investigating_2021" role="doc-biblioref">2021</a>)</span>, los softwares más usados en las ciencias sociales actualmente son R y Stata, por lo que presentaremos un resumen de sus respectivos formatos de documentos dinámicos: RMarkdown y Stata Markdown. También, Python ha sido indiscutiblemente uno de los lenguajes de programación más utilizados en el último tiempo y no solo por científicos sociales. Es por esto que también presentaremos su versión de documento dinámico: Jupyter Notebook.</p>
+<p><strong>RMarkdown</strong></p>
+<p>RMarkdown es un tipo de documento dinámico que combina código de R con lenguaje marcado tipo Markdown (para aprender a usar Markdown click <a href="https://markdown.es/sintaxis-markdown/">aquí</a>). En los documentos de RMarkdown, todo lo que escribamos en el documento el software asumirá que está en formato Markdown, por lo que si utilizamos alguna de las marcas (e.g. usar negrita en alguna palabra) en el documento final esa marca se hará efectiva. Cuando queremos utilizar código debemos escribirlo en bloques o <em>chunks</em>. Los chunks de código tienen distintas opciones, solo por dar un ejemplo, podemos escribir un código para elaborar un gráfico, pero no queremos que el código que se utilizó para elaborar el gráfico pues, los chunks nos dan la opción para lograr eso. Caso contrario, si queremos mostrar tanto el gráfico como el código para elaborarlo -por ejemplo, para que alguien revisé si hemos cometido algún error-, los chunks de código también tienen una opción para eso. En suma, podemos utilizar las distintas marcas de edición que nos ofrece Markdown, así como las distintas opciones para los chunks de código, con tal de elaborar un documento tal y cómo nosotros lo queremos. Para más información sobre RMarkdown, ver el enlace <a href="https://rmarkdown.rstudio.com/">aquí</a>.</p>
+<p>La característica más importante de RMarkdown, es que la combinación del lenguaje marcado y el código se da en un documento <em>renderizado</em>. Renderizado significa que pasa por un proceso en el que se reconocen las distintas indicaciones de marcas y código, dando como resultado final un documento html, pdf o word. La herramienta encargada de este proceso es Pandoc, un convertidor de documentos universal (para más info ver: <a href="https://pandoc.org/" class="uri">https://pandoc.org/</a>)</p>
+<p><strong>Stata Markdown</strong></p>
+<p>Sí bien en Stata han emergidos varios paquetes que buscan apoyar la elaboración de documentos dinamicos (e.g. ver <a href="https://www.stata.com/meeting/italy14/abstracts/materials/it14_haghish.pdf">aquí</a>), el comando Markstat es quizás el más conocido. Al igual que otros tipos de documentos dinámicos, Markstat combina lenguaje Markdown con código de Stata, la principal diferencia con RMarkdown es que el código no se ejecuta en <em>chunks</em>, sino que está separado del texto plano con indentaciones. Es importante tener en cuenta que para ejecutar Markstat debemos tener instalado Pandoc. Para más información sobre cómo utilizar Markstat ver <a href="https://data.princeton.edu/stata/markdown">aquí</a>.</p>
+<p><strong>Jupyter Notebook</strong></p>
+<p>Jupyter Notebook es un tipo de documento dinámico que combina lenguaje marcado tipo Markdown con código de Python. Al igual que RMarkdown, todo lo que escribamos en los Jupyter Notebook será considerado como lenguaje marcado. La diferencia que tiene con RMarkdown es que el documento va renderizando las marcas e indicaciones de código en tiempo real. Es decir, si escribimos en negrita, títulos de distinta jerarquía o añadimos gráficos o tablas el documento lo mostrará inmediatamente. Para más información sobre cómo utilizar Jupyter Notebook ver <a href="https://jupyter-notebook.readthedocs.io/en/stable/">aquí</a>.</p>
+</div>
+<h3>References</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-schindler_Investigating_2021" class="csl-entry">
+Schindler, David, Benjamin Zapilko, y Frank Krüger. 2021. <span>«Investigating <span>Software Usage</span> in the <span>Social Sciences</span>: <span>A Knowledge Graph Approach</span>»</span>. <em>arXiv:2003.10715 [cs]</em>, agosto. <a href="http://arxiv.org/abs/2003.10715">http://arxiv.org/abs/2003.10715</a>.
+</div>
 </div>
 <hr>
 <center> 
@@ -186,8 +197,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="uk-reproducibility-network-ukrn.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="estructura-del-proyecto.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="estructura-del-proyecto.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="control-de-versiones.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

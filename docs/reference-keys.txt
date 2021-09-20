@@ -3,8 +3,6 @@ fig:espectro
 tab:mooc
 fig:resources
 fig:octopus
-intro
-reproducibilidad
 qué-es-la-reproducibilidad
 qué-se-ha-hecho
 berkeley-initiative-for-transparency-in-the-social-sciences

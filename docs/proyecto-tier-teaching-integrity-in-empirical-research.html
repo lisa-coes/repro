@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social</title>
+  <title>2.2 Proyecto TIER (Teaching Integrity in Empirical Research) | Reproducibilidad en Investigación Social</title>
   <meta name="description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta property="og:title" content="2.2 Proyecto TIER (Teaching Integrity in Empirical Research) | Reproducibilidad en Investigación Social" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://github.com/lisa-coes/repro" />
   <meta property="og:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="lisa-coes/repro" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Herramientas para los análisis reproducibles | Reproducibilidad en Investigación Social" />
+  <meta name="twitter:title" content="2.2 Proyecto TIER (Teaching Integrity in Empirical Research) | Reproducibilidad en Investigación Social" />
   
   <meta name="twitter:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
   <meta name="twitter:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
-<link rel="prev" href="uk-reproducibility-network-ukrn.html"/>
-<link rel="next" href="estructura-del-proyecto.html"/>
+<link rel="prev" href="berkeley-initiative-for-transparency-in-the-social-sciences.html"/>
+<link rel="next" href="uk-reproducibility-network-ukrn.html"/>
 <script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -161,16 +161,34 @@ div.csl-indent {
 <div class="hero-image-container"> 
   <img class= "hero-image" src="images/lisa-complete.png">
 </div>
-<div id="herramientas-para-los-análisis-reproducibles" class="section level1" number="3">
-<h1><span class="header-section-number">Capítulo 3</span> Herramientas para los análisis reproducibles</h1>
-<p>Generalmente, cuando se habla de reproducibilidad se toma en consideración su dimensión computacional, esto es, el trabajo con código. Como investigadores de las ciencias sociales empíricas y promotores de la ciencia abierta creemos que efectivamente este es el núcleo de la reproducibilidad, sin embargo no es su única acepción. La mera existencia de un código de análisis no nos garantiza que un proyecto sea reproducible <em>per se</em>, dado que es importante tener en consideración <em>cómo</em> es que distintos elementos del proyecto se relacionan entre sí para <em>regenerar</em> los resultados de un trabajo publicado. Considerando esto, es que dividiremos esta sección presentando un <em>flujo de trabajo reproducible</em> con cuatro características:</p>
-<ol style="list-style-type: decimal">
-<li>Estructura del proyecto</li>
-<li>Documentos dinámicos</li>
-<li>Control de versiones</li>
-<li>Prácticas de código</li>
-</ol>
-<p>Veamos cada uno de ellos.</p>
+<div id="proyecto-tier-teaching-integrity-in-empirical-research" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Proyecto TIER (Teaching Integrity in Empirical Research)</h2>
+<p><img src="docs/images/tier-logo.jpg" width="75%" style="display: block; margin: auto;" /></p>
+<div id="objetivos-y-visión-1" class="section level3 unnumbered">
+<h3>Objetivos y visión</h3>
+<p>El proyecto TIER es una iniciativa respaldada por la <a href="https://sloan.org/">Fundación Alfred Sloan</a> que se propone contribuir a un cambio en las normas y conducta profesionales en torno a la transparencia y reproducibilidad en la investigación empírica en las ciencias sociales.</p>
+<p>Uno de los principios orientadores de sus actividades es el proveer formación en herramientas para la documentación oportuna de procedimientos que involucren datos estadísticos a través de rutinas y referencias que garanticen la <strong>reproducibilidad</strong> de estos. La idea subyacente que motiva estas acciones es que los autores puedan concebir la documentación como un componente esencial de la <strong>comunicación</strong> de sus resultados con sus pares, como también el público no especializado, de modo tal que estas medidas contribuyan a incrementar la confianza y credibilidad en la evidencia científica. En esta línea, su declaración de principios sostiene que su objetivo se puede considerar como logrado cuando:</p>
+<blockquote>
+<p>(…) no proporcionar documentación de replicación para un estudio empírico se considere tan <strong>aberrante</strong> como escribir un artículo teórico que no contenga pruebas de las proposiciones, un artículo experimental que no describa las condiciones de tratamiento o un artículo de revisión de leyes que no cite los estatutos legales o las decisiones judiciales. (traducción propia)</p>
+</blockquote>
+</div>
+<div id="contribución-1" class="section level3 unnumbered">
+<h3>Contribución</h3>
+<p>Es necesario tener presente que uno de los principales campos de acción del proyecto TIER es la <strong>Educación</strong> y <strong>Entrenamiento</strong>, hacia cientistas sociales en formación, tomando en consideración que es en el ciclo formativo inicial donde se deben impulsar la adopción de prácticas integrales para la investigación social empírica. En esta línea, uno de los elementos destacables es la sección de herramientas para la enseñanza titulada “TIER in the Classroom”, sus contenidos referidos a temas de <strong>reproducibilidad</strong> pueden resumir de la siguiente manera:</p>
+<ul>
+<li><p><a href="https://www.projecttier.org/tier-classroom/soup-nuts-exercises/"><strong><em>Soup-to-Nuts Exercises</em></strong></a>: No existe una traducción en el español, no obstante la expresión “Soup-to-Nuts” refiere a un proceso de “inicio-a-fin”. Como lo dice, esta sección muestra ejercicios orientados a la reproducibilidad de los análisis pasando por (1) los datos, (2) procesamiento, (3) análisis y (4) reporte. La idea fuerza de este ejercicio es introducir a estudiantes a los principios y prácticas fundamentales de la investigación social transparente y reproducible para que los implementen en sus tareas o informes.</p></li>
+<li><p><a href="https://www.projecttier.org/tier-classroom/course-materials/"><strong>Materiales para clases</strong></a>: Esta sección está fuertemente orientada al análisis estadístico y a los métodos cuantitativos. Se presentan una serie de veinticuatro cursos de pregrado y postgrado que incorporan en su currículum los principios de transparencia y reproducibilidad en la enseñanza de los métodos de manera transversal. Los materiales de cada curso se encuentran disponibles para libre descarga, incorporando ejercicios de análisis estadístico (R, Stata, SPSS), reportes dinámicos (R Markdown, Markstat) y sus respectivos _ syllabus_.</p></li>
+<li><p><a href="https://www.projecttier.org/tier-classroom/student-work/#student-papers"><strong>Trabajos estudiantiles</strong></a>: En este sección se incorporan una serie de trabajos estudiantiles/papers, los cuales están acompañados de una completa documentación basada en el <a href="https://www.projecttier.org/tier-protocol/">Protocolo TIER (ver detalle abajo)</a>. El objetivo es presentar modelos de trabajos realizados con análisis reproducibles, de modo tal que quien esté interesado en emplear la estructura de un proyecto pueda observar un trabajo real e, idealmente, logre reproducir completamente sus resultados.</p></li>
+</ul>
+<p>Una de las contribuciones más relevantes del proyecto TIER es la elaboración de <strong>estándares</strong> para la <strong>organización</strong>, <strong>publicación</strong> y <strong>comunicación</strong> de proyectos de investigación empírica cuantitativa reproducible. Al respecto, existen dos esfuerzos orientados a este fin:</p>
+<p>Por un lado tenemos el <a href="https://www.projecttier.org/tier-protocol/specifications-3-0/#overview-of-the-documentation">Protocolo TIER</a>, el cual constituye una serie de especificaciones respecto a los contenidos de la documentación para la replicación de un estudio, el cual está orientado a ser empleado para la enseñanza de la investigación que incorpore la reproducibilidad de los análisis. En este caso es importante precisar, como ya hemos identificado en un principio, que el concepto de <strong>replicación</strong> se emplea como sinónimo de <strong>reproducibilidad</strong>, entendiendo este último como la conjunción de datos y métodos originales que nos permitan <strong>regenerar</strong> los resultados de un estudio que ha sido publicado. Por lo tanto, cuando en TIER se habla de replicación se refiere a esta idea. La documentación debe incluir una serie de elementos descritos a continuación.</p>
+<ul>
+<li>Datos empleados por el proyecto</li>
+<li>Rutinas de código escrito en el software empleado para la preparación y análisis estadístico. Esto se incluye dado que el objetivo es proveer los datos brutos a procesar, junto con todas las instrucciones que permiten <strong>regenerar</strong> los resultados reportados en el estudio.</li>
+<li>Fuentes de información que contribuyan a comprender detalladamente cada sección del estudio de inicio a fin.</li>
+</ul>
+<p>Por otro lado tenemos el <a href="https://www.projecttier.org/tier-protocol/dress-protocol/">Protocolo DRESS</a> (Documenting Research in the Empirical Social Sciences). Al igual que el Protocolo TIER, se incorporan los mismos estándares para la documentación para una investigación transparente que incorpore la reproducibilidad de los análisis. Sin embargo, este se encuentra adaptado a los propósitos de los <strong>investigadores profesionales</strong>, más que para el uso de los estudiantes durante su formación en investigación.</p>
+</div>
 </div>
 <hr>
 <center> 
@@ -186,8 +204,8 @@ div.csl-indent {
           </div>
         </div>
       </div>
-<a href="uk-reproducibility-network-ukrn.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="estructura-del-proyecto.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="berkeley-initiative-for-transparency-in-the-social-sciences.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="uk-reproducibility-network-ukrn.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

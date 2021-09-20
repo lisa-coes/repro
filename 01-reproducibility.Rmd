@@ -1,8 +1,4 @@
-# Reproducibilidad
-
-¿Cuántas veces nos hemos enfrentado a un trabajo publicado que no comparte sus materiales, y que por tanto, es imposible acceder a los procedimientos que dieron luces de sus resultados? En el marco de la denominada “crisis de la ciencia", la comunidad científica se ha organizado para dar salida a este problema a través de una diversidad de iniciativas que, a modo general, buscan promover los principios de la ciencia abierta. En este sentido, dichas iniciativas han puesto sus esfuerzos en contribuir con herramientas que permitan dar salida a los problemas en torno a la transparencia de los procesos de investigación y la **reproducibilidad** en la investigación empírica. En este apartado, revisaremos cómo ha sido entendido este problema y luego se presentarán las propuestas de tres iniciativas en torno a cómo abordar la transparencia y la reproducibilidad en las ciencias sociales empíricas.
-
-## ¿Qué es la reproducibilidad?
+# ¿Qué es la reproducibilidad?
 
 En la discusión sobre los problemas de transparencia en torno a los procedimientos de investigación, se vuelve necesario precisar de qué manera es entendido el concepto de reproducibilidad en la ciencia. En esta línea, la laxitud en que ha se ha empleado el término ha llevado a definiciones poco claras, lo cual ha generado una tendencia a confundir lo que refiere a la transparencia de un proceso único que ya ha sido realizado, con un proceso nuevo y que puede realizarse de manera reiterativa, obteniendo los mismos resultados. Por este motivo, esta sección propone dar luces respecto a cómo entendemos el concepto de reproducibilidad, en contraste con el replicabilidad en la ciencias sociales.
 
@@ -16,26 +12,26 @@ La discusión en torno a cómo se entiende la **reproducibilidad**, habitualment
 ```{r scenarios, echo=FALSE, fig.cap="Escenarios B1 y B2 en reproducibilidad y replicabilidad.", fig.align = 'center', out.width = '75%'}
 knitr::include_graphics(path = "docs/images/reproducibility.png")
 ```
-En las ciencias sociales, el debate en torno a la investigación reproducible y la replicabilidad no ha estado ausente. Como fue reseñado en la sección anterior, existen casos icónicos en torno a prácticas cuestionables de investigación que han afectado la confianza en la investigación científica, lo cual ha contribuido a incrementar los esfuerzos por una ciencia social abierta y reproducible [@breznau_Does_2021; @nosek_Promoting_2015]. En los tres escenarios descritos por @barba_Terminologies_2018, las ciencias sociales han experimentado de manera diversa el ajuste hacia una cultura de mayor apertura y precisión en torno a los problemas de la crisis de reproducibilidad, principalmente a través del estudio sistemático de dicha problemática, dentro de lo cual la psicología ha sido un pionera en proveer evidencia para este debate [@opensciencecollaboration_Estimating_2015; @gilbert_Comment_2016]. Al respecto @bishop_Rein_2019 sostiene que una de las principales amenazas para el progreso de la ciencia en general ha sido a la falta de reproducibilidad de los resultados (_irreproducibility_),  lo cual ha afectado principalmente la robustez y credibilidad de la evidencia reportada por las investigaciones, problema que también ha sido identificado en las ciencias sociales, principalmente por la falta de precisión en los procedimientos y las barreras de acceso a materiales clave del proceso de análisis [@freese_Replication_2017].
+En las ciencias sociales, el debate en torno a la investigación reproducible y la replicabilidad no ha estado ausente. Como fue reseñado en el capítulo de transparencia, existen casos icónicos en torno a prácticas cuestionables de investigación que han afectado la confianza en la investigación científica, lo cual ha contribuido a incrementar los esfuerzos por una ciencia social abierta y reproducible [@breznau_Does_2021; @nosek_Promoting_2015]. En los tres escenarios descritos por @barba_Terminologies_2018, las ciencias sociales han experimentado de manera diversa el ajuste hacia una cultura de mayor apertura y precisión en torno a los problemas de la crisis de reproducibilidad, principalmente a través del estudio sistemático de dicha problemática, dentro de lo cual la psicología ha sido un pionera en proveer evidencia para este debate [e.g. @opensciencecollaboration_Estimating_2015; @gilbert_Comment_2016]. Al respecto @bishop_Rein_2019 sostiene que una de las principales amenazas para el progreso de la ciencia en general ha sido a la falta de reproducibilidad de los resultados (_irreproducibility_),  lo cual ha afectado principalmente la robustez y credibilidad de la evidencia reportada por las investigaciones, problema que también ha sido identificado en las ciencias sociales, principalmente por la falta de precisión en los procedimientos y las barreras de acceso a materiales clave del proceso de análisis [@freese_Replication_2017].
 
-Entonces, retomando la distinción clave entre lo que entendemos por **reproducibilidad** y **replicabilidad**, en su revisión, @barba_Terminologies_2018 sugiere que una manera de entender y distinguir ambos conceptos de manera minimalista puede descansar en el carácter de los _datos_ y los _métodos_.  Al respecto @nosek_Promoting_2015 sostiene que en lo que refiere a estas dos dimensiones, los niveles en que una publicación los incorpora es gradual y puede entenderse como un continuo o espectro [@peng_Reproducible_2011], y por tanto, el nivel en que se cumplen con determinados criterios nos permite definir el carácter de una investigación en términos de su reproducibilidad. Por ejemplo, la Figura \@ref(fig:espectro) nos muestra cómo podemos caracterizar una investigación publicada en torno al acceso y vinculación entre código y datos. Por un lado, se observa que en el polo donde únicamente disponemos de la publicación, se entiende como la ausencia de reproducibilidad. Por otro lado, en la medida que incrementa el acceso a los materiales, y se explicita el enlace entre ellos, se puede caracterizar a una publicación como reproducible. [^2]
+Entonces, retomando la distinción clave entre lo que entendemos por **reproducibilidad** y **replicabilidad**, en su revisión, @barba_Terminologies_2018 sugiere que una manera de entender y distinguir ambos conceptos de manera minimalista puede descansar en el carácter de los _datos_ y los _métodos_.  Al respecto @nosek_Promoting_2015 sostiene que en lo que refiere a estas dos dimensiones, los niveles en que una publicación los incorpora es gradual y puede entenderse como un continuo o espectro [@peng_Reproducible_2011], y por tanto, el nivel en que se cumplen con determinados criterios nos permite definir el carácter de una investigación en términos de su reproducibilidad. Por ejemplo, la Figura N° \@ref(fig:espectro) nos muestra cómo podemos caracterizar una investigación publicada en torno al acceso y vinculación entre código y datos. Por un lado, se observa que en el polo donde únicamente disponemos de la publicación, se entiende como la ausencia de reproducibilidad. Por otro lado, en la medida que incrementa el acceso a los materiales, y se explicita el enlace entre ellos, se puede caracterizar a una publicación como reproducible. [^2]
 
 [^2]: En la figura original, @peng_Reproducible_2011 muestra el polo derecho como el mejor escenario y lo clasifica como *Full replication*, sugiriendo que el mejor estándar para poner a prueba los hallazgos de una investigación científica es la replicación, pero en la ausencia de dicha posibilidad la reproducibilidad de los resultados debiese ser un estándar mínimo
 
 ```{r espectro, echo=FALSE, fig.cap="Espectro de Reproducibilidad. Traducción propia en base a @peng_Reproducible_2011 ", fig.align = 'center', out.width = '75%'}
 knitr::include_graphics(path = "docs/images/repro-spectrum.png")
 ```
-Como sugiere @nosek_Promoting_2015, el problema de la ausencia o falta de reproducibilidad debe ser abordado a través de un cambio en las prácticas de investigación, para lo cual se requiere, por un lado, de una disposición por parte de la comunidad científica, es decir a que se le atribuya un _sentido_ positivo a estas prácticas. Sin embargo, @peng_Reproducible_2011 sostiene que una de las principales barreras para promover estas prácticas ha sido la falta de mecanismos que faciliten la distribución de la investigación reproducible, como también la poca claridad respecto de los estándares asociados a ello. Siguiendo esta autocrítica de algunos sectores dentro de la comunidad científica, dentro de los últimos años han surgido iniciativas, por ejemplo, como el Open Science Framework, al alero del [Center for Open Science](https://www.cos.io/), desde donde se busca contribuir con herramientas para el entrenamiento y educación de la comunidad científica en general, como también proveer de una infraestructura tecnológica que facilite la transición cultural hacia una ciencia abierta, transparente y reproducible [@nosek_Promoting_2015]. Por este motivo, proponemos revisar tres iniciativas internacionales que han puesto sus esfuerzos en la promoción de estos principios, con particular atención en la transparencia y reproducibilidad de la investigación científica, y en particular de las ciencias sociales empíricas cuantitativas. Dentro de estas iniciativas encontraremos esfuerzos orientados a la educación y entrenamiento, herramientas tecnológicas y fortalecimiento de redes de colaboración.
+Como sugiere @nosek_Promoting_2015, el problema de la ausencia o falta de reproducibilidad debe ser abordado a través de un cambio en las prácticas de investigación, para lo cual se requiere, por un lado, de una disposición por parte de la comunidad científica, es decir a que se le atribuya un _sentido_ positivo a estas prácticas. Sin embargo, @peng_Reproducible_2011 sostiene que una de las principales barreras para promover estas prácticas ha sido la falta de mecanismos que faciliten la distribución de la investigación reproducible, como también la poca claridad respecto de los estándares asociados a ello. Siguiendo esta autocrítica de algunos sectores dentro de la comunidad científica, dentro de los últimos años han surgido iniciativas, por ejemplo, como el Open Science Framework, al alero del [Center for Open Science](https://www.cos.io/), desde donde se busca contribuir con herramientas para el entrenamiento y educación de la comunidad científica en general, como también proveer de una infraestructura tecnológica que facilite la transición cultural hacia una ciencia abierta, transparente y reproducible [@nosek_Promoting_2015]. Por este motivo, proponemos revisar tres iniciativas internacionales que han puesto sus esfuerzos en la promoción de estos principios, con particular atención en la reproducibilidad de la investigación científica, y en particular de las ciencias sociales empíricas cuantitativas. Dentro de estas iniciativas encontraremos esfuerzos orientados a la educación y entrenamiento, herramientas tecnológicas y fortalecimiento de redes de colaboración.
 
-## ¿Qué se ha hecho?
+# ¿Qué se ha hecho?
 
-### Berkeley Initiative for Transparency in the Social Sciences
+## Berkeley Initiative for Transparency in the Social Sciences
 
 ```{r, echo=FALSE, fig.align = 'center', out.width = '75%'}
 knitr::include_graphics(path = "docs/images/BITSS_logo_horizontal.png")
 ```
 
-#### Objetivos y visión {-}
+### Objetivos y visión {-}
 
 Esta iniciativa busca promover la credibilidad en la evidencia generada por las ciencias sociales a través de mecanismos de avanzada para la transparencia, reproducibilidad y prácticas éticas en la investigación social empírica. Desde esta premisa, ha desarrollado y puesto a disposición de la comunidad científica una serie de herramientas en colaboración con estudiantes, investigadores, entidades académicas y fundaciones de la sociedad civil al alero de tres principios orientadores.
 
@@ -45,7 +41,7 @@ Fortalecer el ecosistema científico, estableciendo condiciones para investigado
 
 Como se ha señalado, esta iniciativa se orienta bajo estos tres ámbitos o principios. Desde sus inicios, se han desarrollado una serie de componentes que buscan promover y dar soluciones a los problemas de transparencia y reproducibilidad en las ciencias sociales. En particular, nos interesa destacar algunas de las contribuciones en este ámbito que serán presentadas a continuación las cuales se pueden resumir en Evidencia, Educación y Recursos.
 
-#### Contribución {-}
+### Contribución {-}
 
 En el ámbito de Evidencia, desde BITSS se ha realizado un esfuerzo por producir y sistematizar evidencia centralizadamente. En este contexto existe la [Research Library](https://www.bitss.org/research-library/), una base de datos de publicaciones científicas que engloba una serie de investigaciones meta-analíticas en el ámbito de las ciencias sociales, contribuyendo con un cuerpo de evidencia sistemática en torno a los problemas y soluciones sobre transparencia y reproducibilidad en las ciencias sociales sin precedentes. En este apartado, tanto los colaboradores como investigadores de BITSS ponen a disposición de la comunidad científica las investigaciones que han sido financiadas a través de las Social Science Meta-Analysis and Research Transparency ([SSMART](https://www.bitss.org/ssmart-grants/)) grants, las cuales constituyen fondos orientados a contribuir a la investigación empírica en torno a la transparencia y reproducibilidad en disciplinas como la economía, ciencia política, psicología y ciencias sociales afines.
 
@@ -84,13 +80,13 @@ En el ámbito de los Recursos que provee BITTS, podemos encontrar librería de r
 knitr::include_graphics(path = "docs/images/resource-library.PNG")
 ```
 
-### Proyecto TIER (Teaching Integrity in Empirical Research)
+## Proyecto TIER (Teaching Integrity in Empirical Research)
 
 ```{r, echo=FALSE, fig.align = 'center', out.width = '75%'}
 knitr::include_graphics(path = "docs/images/tier-logo.jpg")
 ```
 
-#### Objetivos y visión {-}
+### Objetivos y visión {-}
 
 El proyecto TIER es una iniciativa respaldada por la [Fundación Alfred Sloan](https://sloan.org/) que se propone contribuir a un cambio en las normas y conducta profesionales en torno a la transparencia y reproducibilidad en la investigación empírica en las ciencias sociales.
 
@@ -98,7 +94,7 @@ Uno de los principios orientadores de sus actividades es el proveer formación e
 
 > (...) no proporcionar documentación de replicación para un estudio empírico se considere tan **aberrante** como escribir un artículo teórico que no contenga pruebas de las proposiciones, un artículo experimental que no describa las condiciones de tratamiento o un artículo de revisión de leyes que no cite los estatutos legales o las decisiones judiciales. (traducción propia)
 
-#### Contribución {-}
+### Contribución {-}
 
 Es necesario tener presente que uno de los principales campos de acción del proyecto TIER es la **Educación** y **Entrenamiento**, hacia cientistas sociales en formación, tomando en consideración que es en el ciclo formativo inicial donde se deben impulsar la adopción de prácticas integrales para la investigación social empírica. En esta línea, uno de los elementos destacables es la sección de herramientas para la enseñanza titulada “TIER in the Classroom”, sus contenidos referidos a temas de **reproducibilidad** pueden resumir de la siguiente manera:
 
@@ -117,13 +113,13 @@ Por un lado tenemos el [Protocolo TIER](https://www.projecttier.org/tier-protoco
 
 Por otro lado tenemos el [Protocolo DRESS](https://www.projecttier.org/tier-protocol/dress-protocol/) (Documenting Research in the Empirical Social Sciences). Al igual que el Protocolo TIER, se incorporan los mismos estándares para la documentación para una investigación transparente que incorpore la reproducibilidad de los análisis. Sin embargo, este se encuentra adaptado a los propósitos de los **investigadores profesionales**, más que para el uso de los estudiantes durante su formación en investigación.
 
-### UK Reproducibility Network (UKRN)
+## UK Reproducibility Network (UKRN)
 
 ```{r, echo=FALSE, fig.align = 'center', out.width = '75%'}
 knitr::include_graphics(path ="docs/images/UKRN-Logo.png")
 ```
 
-#### Objetivos y visión {-}
+### Objetivos y visión {-}
 
 La UK Reproducibility Network (UKRN) es un consorcio institucional del Reino Unido que tiene por objetivo promover los principios y prácticas de la ciencia abierta con una mirada local, es decir, en las instituciones nacionales y sus investigadores. Para contribuir a este objetivo se realizan esfuerzos en torno a la investigación de los factores que determinan una investigación abierta y robusta, promoviendo el entrenamiento a través de actividades abiertas y diseminando las buenas prácticas para una ciencia abierta. En particular, se proponen a profundizar en los factores que determinan la carencia de **reproducibilidad** y **replicabilidad**, para lo cual se busca:
 
@@ -134,7 +130,7 @@ La UK Reproducibility Network (UKRN) es un consorcio institucional del Reino Uni
 
 En la UKRN se caracteriza por un trabajo en red, es decir por un importante componente de vinculación entre instituciones de investigación vinculadas a universidades como también a oficinas gubernamentales que desarrollan investigación (ver [External Stakeholders](https://www.ukrn.org/stakeholders/))    . En esta línea, existen diversas iniciativas apoyadas por la UKRN que promueven el entrenamiento, metodologías y recursos tecnológicos para la ciencia abierta. A continuación se presentarán algunas de las contribuciones más relevantes realizadas por la red, como también algunas de las iniciativas externas que han sido respaldadas por la UKRN.
 
-#### Contribución {-}
+### Contribución {-}
 
 En el ámbito de la **Educación** y **Entrenamiento**, es posible identificar, por un lado, las contribuciones realizadas directamente por la UKRN, y por otro lado, las iniciativas que son respaldadas por la red y que promueven la formación en torno a los principios y prácticas de la ciencia abierta, particularmente en la etapa temprana de la carrera de investigación.
 

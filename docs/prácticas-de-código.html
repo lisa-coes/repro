@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3.4 Prácticas de código | Reproducibilidad en Investigación Social</title>
+  <meta name="description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3.4 Prácticas de código | Reproducibilidad en Investigación Social" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="https://github.com/lisa-coes/repro" />
+  <meta property="og:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
+  <meta property="og:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="github-repo" content="lisa-coes/repro" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3.4 Prácticas de código | Reproducibilidad en Investigación Social" />
+  
+  <meta name="twitter:description" content="Documento de trabajo del equipo Reproducibilidad  para el Laboratorio de Ciencia Social Abierta" />
+  <meta name="twitter:image" content="https://github.com/lisa-coes/repro/images/lisa-complete.png" />
+
+<meta name="author" content="Investigador a cargo: Juan Carlos Castillo   Asistente de investigación: Julio Iturra   Pasante: Martín Venegas Márquez" />
+
+
+<meta name="date" content="2021-09-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="images/lisa.ico" type="image/x-icon" />
+<link rel="prev" href="control-de-versiones.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="assets/lisa.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="./"><img src="images/favicon.jpg"></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Punto de partida: reproducibilidad en la investigacion social</a></li>
+<li class="chapter" data-level="1" data-path="qué-es-la-reproducibilidad.html"><a href="qué-es-la-reproducibilidad.html"><i class="fa fa-check"></i><b>1</b> ¿Qué es la reproducibilidad?</a></li>
+<li class="chapter" data-level="2" data-path="qué-se-ha-hecho.html"><a href="qué-se-ha-hecho.html"><i class="fa fa-check"></i><b>2</b> ¿Qué se ha hecho?</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="berkeley-initiative-for-transparency-in-the-social-sciences.html"><a href="berkeley-initiative-for-transparency-in-the-social-sciences.html"><i class="fa fa-check"></i><b>2.1</b> Berkeley Initiative for Transparency in the Social Sciences</a>
+<ul>
+<li class="chapter" data-level="" data-path="berkeley-initiative-for-transparency-in-the-social-sciences.html"><a href="berkeley-initiative-for-transparency-in-the-social-sciences.html#objetivos-y-visión"><i class="fa fa-check"></i>Objetivos y visión</a></li>
+<li class="chapter" data-level="" data-path="berkeley-initiative-for-transparency-in-the-social-sciences.html"><a href="berkeley-initiative-for-transparency-in-the-social-sciences.html#contribución"><i class="fa fa-check"></i>Contribución</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="proyecto-tier-teaching-integrity-in-empirical-research.html"><a href="proyecto-tier-teaching-integrity-in-empirical-research.html"><i class="fa fa-check"></i><b>2.2</b> Proyecto TIER (Teaching Integrity in Empirical Research)</a>
+<ul>
+<li class="chapter" data-level="" data-path="proyecto-tier-teaching-integrity-in-empirical-research.html"><a href="proyecto-tier-teaching-integrity-in-empirical-research.html#objetivos-y-visión-1"><i class="fa fa-check"></i>Objetivos y visión</a></li>
+<li class="chapter" data-level="" data-path="proyecto-tier-teaching-integrity-in-empirical-research.html"><a href="proyecto-tier-teaching-integrity-in-empirical-research.html#contribución-1"><i class="fa fa-check"></i>Contribución</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="uk-reproducibility-network-ukrn.html"><a href="uk-reproducibility-network-ukrn.html"><i class="fa fa-check"></i><b>2.3</b> UK Reproducibility Network (UKRN)</a>
+<ul>
+<li class="chapter" data-level="" data-path="uk-reproducibility-network-ukrn.html"><a href="uk-reproducibility-network-ukrn.html#objetivos-y-visión-2"><i class="fa fa-check"></i>Objetivos y visión</a></li>
+<li class="chapter" data-level="" data-path="uk-reproducibility-network-ukrn.html"><a href="uk-reproducibility-network-ukrn.html#contribución-2"><i class="fa fa-check"></i>Contribución</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="herramientas-para-los-análisis-reproducibles.html"><a href="herramientas-para-los-análisis-reproducibles.html"><i class="fa fa-check"></i><b>3</b> Herramientas para los análisis reproducibles</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="estructura-del-proyecto.html"><a href="estructura-del-proyecto.html"><i class="fa fa-check"></i><b>3.1</b> Estructura del proyecto</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="estructura-del-proyecto.html"><a href="estructura-del-proyecto.html#carpeta-raíz"><i class="fa fa-check"></i><b>3.1.1</b> Carpeta raíz</a></li>
+<li class="chapter" data-level="3.1.2" data-path="estructura-del-proyecto.html"><a href="estructura-del-proyecto.html#datos"><i class="fa fa-check"></i><b>3.1.2</b> Datos</a></li>
+<li class="chapter" data-level="3.1.3" data-path="estructura-del-proyecto.html"><a href="estructura-del-proyecto.html#métodos"><i class="fa fa-check"></i><b>3.1.3</b> Métodos</a></li>
+<li class="chapter" data-level="3.1.4" data-path="estructura-del-proyecto.html"><a href="estructura-del-proyecto.html#resultados"><i class="fa fa-check"></i><b>3.1.4</b> Resultados</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="texto-plano-y-documentos-dinámicos.html"><a href="texto-plano-y-documentos-dinámicos.html"><i class="fa fa-check"></i><b>3.2</b> Texto plano y documentos dinámicos</a></li>
+<li class="chapter" data-level="3.3" data-path="control-de-versiones.html"><a href="control-de-versiones.html"><i class="fa fa-check"></i><b>3.3</b> Control de versiones</a></li>
+<li class="chapter" data-level="3.4" data-path="prácticas-de-código.html"><a href="prácticas-de-código.html"><i class="fa fa-check"></i><b>3.4</b> Prácticas de código</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/lisa-coes" target="blank">LISA-COES <i class="fa fa-github"></i></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Reproducibilidad en Investigación Social</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <script src="assets/hideOutput.js"></script>
+  <link href="assets/lisa.css" rel="stylesheet">
+</head>
+        
+
+
+<div class="hero-image-container"> 
+  <img class= "hero-image" src="images/lisa-complete.png">
+</div>
+<div id="prácticas-de-código" class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Prácticas de código</h2>
+<p>Hasta ahora, hemos procurado que la presentación de la información sea lo más general posible y que no esté relacionada a un software estadístico único. Bajo esa idea, hemos presentado lo que es una estructura reproducible de un proyecto, aludiendo a los elementos comunes que se encuentran en distintos protocolos. También, revisamos como el control de versiones y el trabajo con documentos dinámicos pueden ser herramientas para la reproducibilidad. No obstante, no hemos abordado lo que, desde un principio, establecimos como el núcleo de la reproducibilidad: el trabajo con código.</p>
+<p>Este capítulo busca ser una primera aproximación y enseñar lo básico respecto a reproducibilidad. Con tal de mantenernos bajo esa idea, trataremos el trabajo con código de forma abstracta, sin introducirnos a trabajar con un software en particular. Específicamente, veremos algunas <strong>prácticas de código</strong> que contribuyen a hacer un trabajo más reproducible. Estas son aplicables a distintos software que utilicen código, y cuando nos estemos refiriendo a un software específico lo señalaremos.</p>
+<ul>
+<li><p><strong>Nunca hacer trabajo manual.</strong> El objetivo de la reproducibilidad es que cualquier persona pueda regenerar nuestro trabajo, y el trabajo manual es un obstáculo para el cumplimiento de ese objetivo. Trabajar con código permite automatizar los procesos de tratamiento y análisis de datos, es cómo establecer un guión paso a paso sobre lo que se ha hecho para llegar a los resultados del artículo, en contraste, documentar un proceso de análisis manual (e.g. en una planilla de datos) es una tarea sumamente compleja. Si bien, es posible escribir un guión detallado de cada paso, esto tomaría una cantidad de tiempo y energía considerables, más aún teniendo en cuenta la cantidad de decisiones que tiene que tomar un equipo de investigación en el proceso de análisis de datos. Es por eso que la recomendación base es no hacer trabajo manual y trabajar con código, lo que implica evitar software como Microsoft Excel y otros relacionados.</p></li>
+<li><p><strong>Asegurarse que el código siempre produzca el mismo resultado</strong>. Nuestra hoja de código será la receta que otro seguirá para poder elaborar el mismo producto, por lo que tenemos que asegurarnos que esta produzca siempre lo mismo. Un ejemplo es cuando por algún tipo de análisis se necesitan generar números aleatorios. En R, para poder reproducir la generación de esos números aleatorios se utiliza la función <code>set.seed()</code>.</p></li>
+<li><p><strong>Trabajar con scripts</strong>. Para poder automatizar el procesamiento y análisis de los datos, la principal recomendación es trabajar con documentos “script” que albergan el código y permiten su rápida ejecución. En el caso de R, se pueden utilizar documentos .R.</p></li>
+<li><p><strong>Escribir con minúscula, sin espacios, sin ñ y sin tildes.</strong> Gran parte de los software disponibles para análisis de datos traen el inglés como idioma nativo, por lo que existe una alta probabilidad de que tengamos problemas si utilizamos caracteres especiales que no se encuentran en ese idioma. Respecto al uso de mayúsculas, existen software que diferencian cuando un código incluye mayúsculas y cuándo no, esto es una característica conocida como <em>case sensitive</em>. Sin embargo, no todos los software cuentan con esta característica, por lo que es mejor evitar su uso.</p></li>
+<li><p><strong>Indentar el código</strong>. La indentación es una característica del trabajo con código en general (no solo a nivel de software estadístico) y se refiere a la jerarquía en los niveles del código. Indentar permite una lectura más fácil del código, ya que permite comprenbder visualmente el orden y la estructura del código. Uno de los ejemplos más conocidos es la elaboración de funciones condicionales de tipo <code>if-else</code>.</p></li>
+<li><p><strong>Comentar el código</strong>. Comentar el código es sustancial para que cualquier persona no asociada al proyecto (o incluso uno mismo en el futuro) pueda entender para qué sirve cada función y reproducir el documento sin problemas. Aquí el lema es: nunca es mucho cuando se refiere a comentar el código. Mientras mejor explicado esté qué hace cada cosa y por qué, la receta será más fácil de seguir.</p></li>
+<li><p><strong>Especificar las versiones de paquetes.</strong> Gran parte de los software estadísticos trabajan en base a la idea de <em>paquetes</em>. Estos son un conjunto de herramientas que facilitan el trabajo con datos. Existen paquetes tanto para tareas simples como el tratamiento de bases de datos o la generación de gráficos, así como para técnicas estadísticas avanzadas. No obstante, una característica a tener en cuenta es que los paquetes tienen versiones, ya que van mejorando día tras día. Esto ocurre especialmente en software de código abierto como R o Python. A raíz de esto, es que una de las recomendaciones para la reproducibilidad es conocer con qué versión de los paquetes se está trabajando y documentarlo. Inclusive, en software como R existen herramientas que permiten facilitar esta tarea (ver <a href="https://groundhogr.com/">groundhog</a>)</p></li>
+<li><p><strong>Elaborar código autocontenido.</strong> Existen dos formas de trabajar con código. La primera es el trabajo tipo “cascada”, donde el código es como agua que fluye desde arriba hacia abajo. Esta metáfora significa que cada código es parte de un todo interdependiente, y como tal, cada bloque depende del anterior. Un ejemplo simple es que con un bloque de código se carga una base de datos y con otro se presenta un gráfico de la misma. En contraste a esta forma de trabajo, existe una segunda de tipo “autocontenida”. Esta forma implica que, en vez de que el código sea interdependiente entre sí, cada bloque de código es una tarea que inicia y finaliza en el mismo bloque. Siguiendo el ejemplo, esto implicaría que cargar la base de datos y mostrar un gráfico de ella es una tarea que comienza y termina en el mismo bloque de código. Si bien ya el trabajar con código ya es un avance hacia la reproducibilidad, trabajar de manera autocontenida es un paso mucho mayor, ya que minimiza la probabilidad de que el código no pueda ser reproducido por un tercero.</p></li>
+<li><p><strong>Nombrar variables de manera óptima.</strong> Como se señaló anteriormente, muchas veces los nombres de las variables en las bases de datos siguen una lógica más técnica que sustantiva. Es por eso que, para poder trabajar de manera óptima y que, al mismo tiempo, el código sea más fácil de leer se sugiere renombrar las variables de forma <em>sustantiva</em> y <em>corta</em>. Por ejemplo, si una variable de <em>edad</em> de una encuesta tiene por nombre <code>m01</code>, sugerimos cambiarlo a <code>edad</code>.</p></li>
+<li><p><strong>Etiquetado o buen diccionario de variables</strong>. Además de renombrar las variables, recomendamos etiquetar de forma sustantiva las variables que se utilizarán y/o hacer un buen diccionario de ellas. Esto tiene por objetivo que la base de datos que hayamos elaborado para nuestros análisis sea más fácil de leer y reproducir.</p></li>
+<li><p><strong>Utilizar UTF8</strong>. Como señalamos, recomendamos evitar el uso de caracteres especiales en trabajo con código, esto implica el uso de tildes o ñ. No obstante, para ciertas situaciones será indispensable que escribamos en nuestro idioma nativo (en este caso español), y por ende utilizar caracteres especiales. Un ejemplo es cuando establecemos los títulos y categorías de una tabla o un gráfico. En estos casos, sugerimos establecer el formato del documento de código en formato UTF-8. Este formato es de tipo universal y acepta todo tipo de caracteres, incluyendo los especiales.</p></li>
+<li><p><strong>Trabajar con rutas relativas</strong>. Las rutas relativas son una ubicación en el computador que es relativa a un directorio base o carpeta raíz. En el caso del trabajo con datos, generalmente la carpeta raíz es la que alberga todos los documentos que refieren a ese proyecto y las rutas relativas son direcciones hacia distintos archivos teniendo como base la carpeta raíz. Esta es una forma reproducible de ordenar los archivos ya que no depende de quién está trabajando.</p></li>
+<li><p><strong>Uso de software libre.</strong> Con los nuevos avances en la tecnología y en el acceso a ella han emergido iniciativas colaborativas de desarrollo de software. Esto implica que en vez de estar centralizado por una compañía, quién está detrás de los avances en el desarrollo del software es una comunidad activa de usuarios. Software como R y Python son ejemplos de este tipo de iniciativas. Recomendamos el uso de software libre porque, además de alinearse con los principios de la ciencia abierta, proveen un ambiente y herramientas mucho más propenso a adoptar prácticas que avancen hacia la reproducibilidad.</p></li>
+<li><p><strong>Estar en contacto con la comunidad de investigadores y/o desarrolladores de herramientas computacionales</strong>. Más que una práctica relacionada al código, es una recomendación respecto a cómo hacer más óptimo nuestro trabajo. Con internet y las nuevas herramientas computacionales, existen varias comunidades a las cuales recurrir en caso de necesitar ayuda con el desarrollo del código. Por ejemplo,
+Stack Overflow es un foro donde programadores, ingenieros y en general cualquier persona que utiliza código en su día a día puede hacer o responder preguntas respecto a código. Es una gran herramienta para cuando los códigos no funcionan o cuando queremos conocer formas más eficientes de hacer una tarea. Incluimos esta recomendación porque participar de estos foros y ser parte activa de la comunidad implica adoptar prácticas para la reproducibilidad, con tal de que otros puedan entender nuestras preguntas y respuestas.</p></li>
+</ul>
+
+</div>
+<!-- </div> -->
+<hr>
+<center> 
+  <div class="footer">
+      Laboratorio de Ciencia Social Abierta <a href="https://lisa-coes.netlify.app/"> (LISA) </a> del Centro de Estudios de Conflicto y Cohesión Social (COES) <a href="https://coes.cl/"></a>
+      <br>
+      Para más información puedes contactárnos <a href= "lisa@coes.cl"> en nuestro correo </a>
+  </div>
+</center>
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="control-de-versiones.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["repro.pdf", "repro.epub"],
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
